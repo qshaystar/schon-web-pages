@@ -1,0 +1,167 @@
+@lightest-gray: #939393;
+@light-gray: #747474;
+@md-gray: #868686;
+@md-gray-title: #535353;
+@heavy-gray-title: #3a3a3a;
+
+
+
+.intro {
+
+		.social-media {
+			margin-top: 30px;
+
+			h6 {
+				line-height: 2;
+			}
+		}
+
+		.social-icons {
+
+			a {
+				font-size: 14px;
+				transition: color .4s;
+
+				&:hover {
+					color: @heavy-gray-title*2;
+				}
+			}
+		}
+}
+
+.explanation {
+
+	p {
+		margin-bottom: 15px;
+		line-height: 1.5;
+		color: @light-gray;
+	}
+
+	span {
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+}
+
+
+.member {
+
+	img {
+		width: 100%;
+	}
+}
+
+.cover {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity .5s;
+
+    &:hover {
+    	opacity: 1;
+    }
+
+
+    .social-icons {
+    	justify-content: center;
+	    align-items: center;
+	    height: 100%;
+
+    }
+
+    li {
+    	border-radius: 50%;
+	    text-align: center;
+	    line-height: 35px;
+    	background-color: @md-gray-title;
+	    width: 35px;
+	    height: 35px;
+	    transition: background-color .3s;
+
+	    &:hover {
+	    	background-color: white;
+	    }
+    }
+
+    a {
+    	color: white;
+    	transition: color .3s;
+
+    	&:hover {
+    		color: @md-gray-title;
+    	}
+    }
+}
+
+.person {
+	margin: 15px 0 35px 0;
+	border-left: 8px solid #eee;
+
+	.name {
+		margin-left: 10px;
+		font-size: 20px;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    color: @heavy-gray-title;
+
+	}
+
+	.p-title {
+		margin-left: 10px;
+		font-size: 12px;
+		text-transform: uppercase;    
+	    letter-spacing: 2px;
+	    color: @lightest-gray;
+	}
+}
+
+.wanted {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f2f2f2;
+
+    .text {
+    	position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	text-align: center;
+    	font-size: 30px;
+    	text-transform: uppercase;
+    	font-weight: 600;
+	    color: @lightest-gray;
+    }
+}
+
+@media (min-width: 768px) {
+
+	#breadcrumbs {
+		display: flex;
+	    justify-content: center;
+	    font-size: 14px;
+	    line-height: 3;
+	    color: @light-gray;
+	}
+	
+	.intro {
+
+		.social-media {
+			text-align: left;
+
+			h6 {
+				margin-bottom: 0;
+			}
+		}
+
+		.social-icons {
+			justify-content: flex-start;
+		}
+	}
+}
