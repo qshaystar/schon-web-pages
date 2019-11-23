@@ -58,6 +58,13 @@ hr {
 	padding: .75em;
 }
 
+.dropdown:after {
+	font-family: "fontello";
+	content: "\f107";
+	padding-left: 3px;
+}
+
+
 .icon-shopping-bag:before {
 	font-weight: 600;
 }
@@ -98,7 +105,7 @@ hr {
 .nav, .account {
 	display: none;
 	position: absolute;
-	top: 7%;
+	top: 61px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -276,8 +283,8 @@ h3 {
 
 .discount-label {
     position: absolute;
-    top: 10%;
-    padding: 5px 10px;
+    top: 12%;
+    padding: 3px 6px;
     font-size: 14px;
     font-weight: bold;
     background-color: #b2cc29;
@@ -286,8 +293,8 @@ h3 {
 
 .new-label {
 	position: absolute;
-	top: 10%;
-    padding: 5px 10px;
+	top: 12%;
+    padding: 3px 6px;
 	background: black;
     color: white;
     text-transform: uppercase;
@@ -439,6 +446,10 @@ h3 {
 		object-position: 90%;
 	}
 
+	h2:first-child {
+		font-weight: 600;
+	}
+
 	p {
 		width: 70%;
 	}
@@ -455,6 +466,17 @@ h3 {
 
 	img {
 		width: 100%;
+	}
+
+	.tag {
+		line-height: 2;
+		letter-spacing: 2px;
+	}
+
+	.banner-title {
+		span {
+				font-size: 18px;
+			}
 	}
 
 }
@@ -527,10 +549,14 @@ h3 {
 	    bottom: 10px;
 	}
 
-	.discount-label {
-		top: ~"calc(10% + 29px)";
-	}
+	
 
+}
+
+.best-item:nth-child(4) {
+	.new-label {
+		top: ~"calc(12% + 27px)";
+	}
 }
 
 
@@ -542,7 +568,7 @@ h3 {
     right: 0;
     bottom: 0;
     background-color: white;
-    
+    z-index: 5;
 	opacity: 0;
 
 	&:hover {
@@ -576,6 +602,7 @@ h3 {
 }
 
 .subtitle {
+	margin-left: 3px;
 	font-size: 14px;
     letter-spacing: 2px;
     color: @lightest-gray;
@@ -610,7 +637,8 @@ h3 {
 	padding: 15px;
 
 	h5 {
-		font-size: 18px;
+		font-size: 16px;
+   		line-height: 14px;
 		text-transform: uppercase;
 		color: @heavy-gray-title;
 	}
@@ -637,7 +665,7 @@ h3 {
 	}
 
 	li {
-		line-height: 2
+		line-height: 2.5;
 	}
 
 	a {
@@ -672,7 +700,7 @@ h3 {
 
 	input {
 		border: none;
-	    padding: 15px 18px;
+	    padding: 10px 18px;
 	    border-top-left-radius: 30px;
 	    border-bottom-left-radius: 30px;
 	    width: 60%;
@@ -684,7 +712,7 @@ h3 {
 	    border: none;
 	    border-top-right-radius: 30px;
 	    border-bottom-right-radius: 30px;
-	    padding: 15px 18px;
+	    padding: 10px 18px;
 		font-size: 14px;
 		font-weight: bold;
 		color: white;
@@ -722,7 +750,7 @@ h3 {
 }
 
 
-// tabel 
+// tablet 
 
 @media (min-width: 768px) {
 
@@ -732,7 +760,7 @@ h3 {
 			margin-right: -5px;
 		}
 
-		.col-md-3, .col-md-5, .col-md-6, .col-md-7 {
+		.col-md-3, .col-md-4, .col-md-6, .col-md-8 {
 			padding-left: 5px;
 			padding-right: 5px;
 		}
@@ -754,6 +782,9 @@ h3 {
 	}
 
 
+	h3.banner-title {
+		font-size: 16px;
+	}
 	
 	.collection-banner, .sofa-banner {
 		height: 340px;
@@ -799,7 +830,7 @@ h3 {
 	}
 
 	.dining-chair-banner {
-		height: 136px;
+		height: 125px;
 
 		.banner-img {
 			object-position: top;
@@ -807,15 +838,18 @@ h3 {
 	}
 
 	.floor-lamp-banner {
-		height: 203px;
+		height: 200px;
 
+		&.banner {
+			margin-top: 15px;
+		}
 		.banner-img {
 			object-position: bottom;
 		}
 	}
 
 	.stool-banner {
-		height: 349px;
+		height: 340px;
 
 	}
 
@@ -828,6 +862,7 @@ h3 {
 			.col-md-6 {
 				padding: 0;
 			}
+			
 		}
 	}
 
@@ -837,9 +872,25 @@ h3 {
 		}
 	}
 
+
+.best-item:nth-child(4) {
+	.new-label {
+		top: ~"calc(12% + 24px)";
+	}
+}
+
+	.marked-menu {
+		font-size: 12px;
+	}
+
 	.brands {
 		img {
 			width: 100%;
+		}
+
+		.row {
+			margin-left: -25px;
+			margin-right: -25px;
 		}
 
 		.brand-logo {
@@ -858,5 +909,422 @@ h3 {
 		.address {
 			justify-content: center;
 		}
+	}
+}
+
+// desktop
+
+@media (min-width: 1024px) {
+
+	// header
+
+	#header {
+		padding: 0;
+
+		a {
+			transition: color .3s;
+			&:hover {
+				color: @md-gray-title*1.5;
+			}
+		}
+	}
+
+	.dark-bg {
+		background-color: #282828;
+	}
+
+	.menu-toggle, .user-toggle {
+		display: none;
+	}
+
+	.header-top {
+		display: flex;
+		justify-content: space-between;
+
+		.contact-info {
+			display: flex;
+			font-size: 14px;
+
+
+			li {
+				padding: 0.75rem 1rem;
+			}
+		}
+
+		.account {
+			display: flex;
+		    flex-direction: row;
+		    position: static;
+		    padding: 0;
+    		font-size: 14px;
+    		text-transform: capitalize;
+    		font-weight: normal;
+			background: transparent;
+
+			li {
+				padding: 0.75rem 1.5rem;
+			}
+		}
+
+		li {
+			transition: background-color .5s;
+			&:hover {
+				background-color: #3f3e43;
+			}
+		}
+
+		a {
+			color: @light-gray;
+
+		}
+
+	}
+
+	.header-bottom {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	#nav-bar {
+		display: flex;
+	}
+
+	.nav {
+		display: flex;
+	    flex-direction: row;
+	    position: static;
+	    padding: 0;
+	    font-size: 15px;
+	    line-height: 29px;
+	    font-weight: 500;
+	    color: @md-gray-title;
+	}
+
+	.nav-link {
+		padding: 0 20px;
+	}
+
+	.nav-side {
+		li {
+			padding-left: 20px;
+		}
+		
+	}
+
+	#cart {
+		display: flex;
+	}
+
+	.cart-sum {
+		display: block;
+		font-size: 14px;
+		line-height: 14px;
+
+		div {
+			font-weight: 600;
+		}
+	}
+
+
+	// content
+
+	#content {
+
+		.best-seller, .brands {
+			padding-top: 100px;
+		}
+	}
+
+	h6 {
+		margin-bottom: 24px;
+		line-height: 29px;
+	}
+
+	p {
+		margin: 10px 0;
+	}
+
+	hr {
+		margin: 70px 0;
+	}
+
+	.full-padding {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.placeholder {
+		line-height: 19px;
+	} 
+
+
+	.banner-text {
+		padding: 12% 10%;
+	}
+
+	.banner-title {
+		h2 {
+			font-size: 54px;
+		}
+	}
+
+	.tag {
+		font-size: 15px;
+		letter-spacing: 2px;
+	}
+
+	a {
+		&.go-shop {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.thumbnail {
+		transition: box-shadow .4s;
+		&:hover {
+			box-shadow: 4px 4px 12px -2px rgba(51, 51, 102, 0.5);
+		}
+	}
+
+
+	.header {
+
+		.price {
+			font-size: 30px;
+		}
+	}
+
+	.collection-banner {
+		height: 563px;
+
+		.text-area {
+			width: 75%;
+		}
+	}
+
+	.sofa-banner {
+		height: 563px;
+
+		.banner-title {
+			font-size: 25px;
+		}
+
+		.price-label {
+			padding-top: 30px;
+			width: 130px;
+			height: 130px;
+		}
+
+		.tag {
+			margin-bottom: 15px;
+			text-align: left;
+		}
+	}
+
+	.bean-banner, .blue-chair-banner {
+
+		.banner-text {
+			padding: 10% 8%;
+		}
+
+		.banner-title {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+		.price {
+			font-size: 26px;
+		}
+	}
+
+	.bean-banner {
+		height: 275px;
+	}
+
+	.blue-chair-banner {
+		height: 269px;
+
+		&.banner {
+			margin-top: 19px;
+		}
+
+		.price {
+			line-height: 1.5;
+		}
+	}
+
+	.dining-chair-banner, .floor-lamp-banner {
+
+		.banner-text {
+			padding: 7%;
+		}
+
+		.banner-title {
+			font-size: 28px;
+		}
+	}
+
+	.dining-chair-banner {
+		height: 200px;
+	}
+
+	.floor-lamp-banner {
+		height: 310px;
+
+		&.banner {
+			margin-top: 20px;
+		}
+	}
+
+	.stool-banner {
+		height: 530px;
+
+		.banner-img {
+			object-position: 70%
+		}
+
+		.banner-text {
+			padding: 6%;
+		}
+	}
+
+	.features {
+
+		.row:nth-child(3) {
+			margin-top: 70px;
+		}
+
+		.tag {
+			font-size: 12px;
+		}
+	}
+
+	.feature-menu {
+		display: flex;
+		justify-content: space-between;
+
+		.control-bar {
+			display: flex;
+		    border-radius: 35px;
+		    padding: 5px;
+		    font-size: 14px;
+		    background: #eee;
+
+    		li {
+ 		    border-radius: 50%;
+		    text-align: center;
+		    line-height: 25px;
+		    width: 25px;
+		    height: 25px;
+		    background: white;
+
+    			&:first-child {
+    				margin-right: 2px;
+    			}
+    		}
+
+    		a {
+    			color: #bbb;
+				transition: color .3s;
+
+    			&:hover {
+    				color: #bbb/2;
+    			}
+    		}
+		}
+	}
+
+	.tabs {
+		line-height: 30px;
+
+		a {
+			transition: color .3s;
+			&:hover {
+				color: @heavy-gray-title;
+			}
+		}
+	}
+	
+	.feature {
+		margin-top: 0;
+	}
+
+	.best-seller {
+
+		.desc {
+			margin-top: 14px;
+		}
+		.product-name {
+			
+			font-size: 14px;
+		}
+		.price {
+			font-size: 18px;
+		}
+	}
+
+	.brand-logo {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		transition: filter .4s;
+
+		&:hover {
+			filter: opacity(.5);
+		}
+	}
+
+	// footer
+
+	.footer-top {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.rwo.advantage {
+		margin: 0;
+	}
+
+	.pros {
+		padding: 0;
+	}
+
+	.info {
+		text-align: left;
+
+		&.row {
+			margin: 0;
+		}
+	
+		.col-lg {
+			padding: 0;
+		}
+
+		.col-lg-2 {
+			&:nth-child(2) {
+				padding-left: 45px;
+			}
+		}
+
+		.address {
+			justify-content: flex-start;
+		}
+	}
+
+	.subscribe {
+		margin-bottom: 65px;
+	}
+
+	.subscribe, .social-media {
+		text-align: right;
+	}
+
+	.copyright {
+		float: left;
+	}
+
+	.payment-methods {
+		float: right;
 	}
 }
