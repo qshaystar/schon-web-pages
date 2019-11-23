@@ -4,6 +4,11 @@
 .intro .social-media h6 {
   line-height: 2;
 }
+.intro p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #747474;
+}
 .intro .social-icons a {
   font-size: 14px;
   -webkit-transition: color 0.4s;
@@ -11,11 +16,6 @@
   transition: color 0.4s;
 }
 .intro .social-icons a:hover {
-  color: #747474;
-}
-.explanation p {
-  margin-bottom: 15px;
-  line-height: 1.5;
   color: #747474;
 }
 .explanation span {
@@ -111,17 +111,6 @@
   color: #939393;
 }
 @media (min-width: 768px) {
-  #breadcrumbs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    font-size: 14px;
-    line-height: 3;
-    color: #747474;
-  }
   .intro .social-media {
     text-align: left;
   }
@@ -132,6 +121,74 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+  }
+}
+.intro .contact-desc {
+  font-size: 14px;
+}
+.intro .contact-desc h6 {
+  margin-bottom: 0;
+}
+.intro .contact-desc a {
+  color: #747474;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.intro .contact-desc a:hover {
+  color: #535353;
+}
+.question-form {
+  padding-top: 50px;
+}
+.question-form .form-control {
+  border-radius: 20px;
+}
+.question-form ::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form :-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form ::-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form ::placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form ::-webkit-input-placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form :-ms-input-placeholder {
+  font-size: 12px;
+  font-weight: normal;
+}
+.question-form .btn {
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+.question-form .btn-secondary {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+}
+@media (min-width: 768px) {
+  .question-form {
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .intro .contact-desc {
+    margin-top: 50px;
+  }
+  .company {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 }
 * {
@@ -183,6 +240,7 @@ hr {
 .h-title {
   font-size: 40px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #3a3a3a;
 }
 .dropdown:after {
@@ -264,7 +322,8 @@ hr {
 #breadcrumbs {
   display: none;
 }
-#content .header.gray-bg {
+#content .header.gray-bg,
+#content .header.img-bg {
   padding: 30px 0;
   text-align: center;
 }
@@ -279,6 +338,12 @@ hr {
 }
 .gray-bg {
   background-color: #f6f6f6;
+}
+.img-bg {
+  background-image: url(../images/contact-header.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 .section-title {
   margin-bottom: 30px;
@@ -686,6 +751,9 @@ h3.banner-title {
 .info a {
   font-size: 14px;
   color: #939393;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 .info a:hover {
   color: #535353;
@@ -772,6 +840,22 @@ h3.banner-title {
 }
 .payment-methods {
   display: inline-block;
+}
+.simple-footer .logo {
+  -webkit-filter: brightness(0);
+  filter: brightness(0);
+}
+.simple-footer .info-box:last-child {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.simple-footer .copyright {
+  color: #535353;
+}
+.simple-footer .desc {
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   #breadcrumbs {
@@ -1049,7 +1133,8 @@ h3.banner-title {
   #content .features {
     padding-top: 50px;
   }
-  #content .header.gray-bg {
+  #content .header.gray-bg,
+  #content .header.img-bg {
     padding: 50px 0;
   }
   h6 {
@@ -1296,5 +1381,20 @@ h3.banner-title {
   }
   .payment-methods {
     float: right;
+  }
+  .simple-footer .info-box:last-child {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    text-align: right;
+  }
+  .simple-footer .address {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .simple-footer .copyright,
+  .simple-footer .payment-methods {
+    float: none;
   }
 }

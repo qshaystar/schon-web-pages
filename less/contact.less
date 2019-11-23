@@ -1,0 +1,86 @@
+@lightest-gray: #939393;
+@light-gray: #747474;
+@md-gray: #868686;
+@md-gray-title: #535353;
+@heavy-gray-title: #3a3a3a;
+
+
+
+.intro {
+	
+	.contact-desc {
+		font-size: 14px;
+
+		h6 {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: @light-gray;
+			transition: color .3s;
+
+			&:hover {
+				color: @md-gray-title;
+			}
+		}
+	}
+}
+
+.question-form {
+	padding-top: 50px;
+	
+	.form-control {
+		border-radius: 20px;
+	}
+
+	::placeholder  {
+		font-size: 12px;
+  		font-weight: normal;
+	}
+
+::-webkit-input-placeholder {
+		font-size: 12px;
+		font-weight: normal;
+	}
+
+:-ms-input-placeholder {
+		font-size: 12px;
+		font-weight: normal;
+	}
+
+	.btn {
+		border-radius: 30px;
+	    padding: 10px 15px;
+	    font-size: 14px;
+	}
+
+	.btn-secondary {
+		background-color: @heavy-gray-title;
+    	border-color: @heavy-gray-title;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+	.question-form {
+		padding-top: 0;
+	}
+	
+}
+
+@media (min-width: 1024px) {
+	
+	.intro {
+
+		.contact-desc {
+			margin-top: 50px;
+		}
+	}
+
+	.company {
+		justify-content: space-around;
+	}
+}
+
+	

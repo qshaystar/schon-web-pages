@@ -7,6 +7,7 @@
 	<title>Contact</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fontello.css">
 
@@ -16,38 +17,31 @@
 <body>
 	<div id="header">
 
-		<div class="wide-header clearfix">
-			<div class="logo">
-				<img src="images/logo.png" alt="schon">
+		<div class="header-bottom wide-header container-fluid">
+			<div class="head-left clearfix">
+				<div class="logo">
+					<img src="images/logo.png" alt="schon">
+				</div>
+
+				<div class="contact-info">
+					<a href="tel:+1-555-333-22-11">
+						+1 (555) 333 22 11
+					</a>
+				</div>
 			</div>
 
-			<div class="contact-info">
-				<a href="tel:+1-555-333-22-11">
-					+1 (555) 333 22 11
-				</a>
-			</div>
+			<div id="nav-bar">
 
-			<div class="nav-bar clearfix">
-				<ul id="nav" class="clearfix">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" >Products </a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="#">Blog</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-							
-				</ul>
+				<nav class="nav text-uppercase">
+				  <a class="nav-link" href="index.html">Home</a>
+				  <a class="nav-link dropdown" href="#">Products</a>
+				  <a class="nav-link" href="about.html">About</a>
+				  <a class="nav-link" href="#">Blog</a>
+				  <a class="nav-link" href="#">Contact</a>
+				  
+				</nav>
 
-				<ul class="nav-side clearfix">
+				<ul class="nav-side">
 
 
 					<li class="menu-toggle">
@@ -69,11 +63,11 @@
 						</a>
 					</li>
 
-					<li id="cart" class="clearfix">
+					<li id="cart">
 						<a href="#">
 							<i class="icon-shopping-bag"></i>
 						</a>
-						<div class="item">3</div>
+						<div class="qty">3</div>
 					</li>
 
 					<li class="user-toggle">
@@ -83,7 +77,7 @@
 					</li>	
 				</ul>
 
-				<ul class="account clearfix">
+				<ul class="account">
 					<li>
 						<a href="#">Order Track</a>
 					</li>
@@ -108,7 +102,7 @@
 		<div class="header  img-bg">
 			<div class="container">
 
-				<h2 class="title">contact</h2>
+				<h2 class="h-title">contact</h2>
 
 				<ul id="breadcrumbs">
 					<li class="boundary">
@@ -130,29 +124,29 @@
 				<div class="container">
 					
 					<div class="row company">
-						<div class="col-6">
-							<h4 class="title">schön. chair maker</h4>
+						<div class="col-12 col-md-6">
+							<h4 class="section-title">schön. chair maker</h4>
 
 							<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 						
 
 							<div class="contact-desc">
 								<div class="row">
-									<div class="col-4 address">
+									<div class="col-12 col-lg-4 address">
 										<h6>Address</h6>
 										<p>Connauge Road Central Suite 18B, 148 <br>
 										New Yankee
 										</p>
 									</div>
 
-									<div class="col-4 phone">
+									<div class="col-12 col-lg-4 phone">
 										<h6>Phone</h6>
 										<a href="tel:+1-555-333-22-11">
 											+1 (555) 333 22 11
 										</a>
 									</div>
 
-									<div class="col-4 mail">
+									<div class="col-12 col-lg-4 mail">
 										<h6>E-Mail</h6>
 										<a href="mailto:info@schon.chair">
 											info@schon.chair
@@ -163,17 +157,26 @@
 
 						</div>
 
-						<div class="col-6">
+						<div class="col-12 col-md-6 col-lg-4 question-form">
 							<h6>Have a question?</h6>
 
 							<form>
-								<input type="text" placeholder="Name">
-								<input type="text" placeholder="E-Mail">
-								<input type="text" placeholder="Subject">
+								<div class="form-group">
+								   <input type="text" class="form-control" placeholder="Name">
+								 </div>
+								 <div class="form-group">
+								   <input type="text" class="form-control" placeholder="E-Mail">
+								 </div>
+								 <div class="form-group">
+								   <input type="text" class="form-control" placeholder="Subject">
+								 </div>
+								
+								<div class="form-group">
+								   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+								 </div>
 
-								<textarea cols="30" rows="5" placeholder="Message"></textarea>
 							</form>
-							<button>Send</button>
+							<button type="submit" class="btn btn-secondary">Send</button>
 						</div>
 
 					</div>
@@ -196,11 +199,11 @@
 
 
 
-	<div id="footer" class="gray-bg simpel-ver">
-			<div class="container">
+	<div id="footer" class="simple-footer">
+			<div class="container footer-top">
 
 				<div class="row info">
-					<div class="col-2 info-box">
+					<div class="col-12 col-md-3 col-lg info-box">
 						<h6>products</h6>
 						<ul>
 							<li><a href="#">All</a></li>
@@ -213,7 +216,7 @@
 						</ul>
 					</div>
 
-					<div class="col-2 info-box">
+					<div class="col-12 col-md-3 col-lg info-box">
 						<h6>costomer</h6>
 						<ul>
 							<li><a href="#">FAQ</a></li>
@@ -223,7 +226,7 @@
 						</ul>
 					</div>
 
-					<div class="col-2 info-box">
+					<div class="col-12 col-md-3 col-lg info-box">
 						<h6>pages</h6>
 						<ul>
 							<li><a href="#">Home</a></li>
@@ -235,7 +238,7 @@
 						</ul>
 					</div>
 
-					<div class="col-2 info-box">
+					<div class="col-12 col-md-3 col-lg info-box">
 						<h6>socials</h6>
 						<ul>
 							<li><a href="#">twitter</a></li>
@@ -246,22 +249,24 @@
 						</ul>
 					</div>
 
-					<div class="col-4 info-box">
-
+					<div class="col-12 col-lg-4 info-box">
 						<div class="logo">
 							<img src="images/logo-gray.png" alt="schon">
 						</div>
+						<p class="desc">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque quod odio.
+						</p>
 
-						<div class="contact">
+						<div class="contact-desc">
 							<div class="address">
 								<i class="icon-location"></i>
-								<span>
+								<p>
 									Connauge Road Central Suite 18B, 148 <br>
-									<span>New Yankee</span>
-								</span>
+									New Yankee
+								</p>
 								
 							</div>
-							<br>
+							
 							<div class="phone">
 								<i class="icon-phone"></i>
 								<a href="tel:+1-555-333-22-11">
@@ -272,7 +277,7 @@
 								<i class="icon-mail"></i>
 								<a href="mailto:info@schon.chair">
 								info@schon.chair
-							</a>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -280,10 +285,10 @@
 
 			</div>
 
-			<div class="bottom simpel-ver">
+			<div class="footer-bottom">
 				<div class="container">
 					<div class="payment-methods">
-						<img src="images/payment-methods-logos.png" alt="payment-method">
+						<img src="images/payment-gray.png" alt="payment-method">
 					</div>
 					<div class="copyright">
 						Copyright schön. All rights Received.
