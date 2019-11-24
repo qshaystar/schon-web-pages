@@ -6,6 +6,7 @@
 
 @import "about.less";
 @import "contact.less";
+@import "blog-list-sidebar.less";
 
 * {
 	-webkit-box-sizing: border-box;
@@ -163,9 +164,28 @@ hr {
 	}
 }
 
+
 #breadcrumbs {
-	display: none;
-}
+		display: flex;
+	    justify-content: center;
+	    font-size: 14px;
+	    line-height: 3;
+	    color: @light-gray;
+
+	    .boundary:after {
+	    	font-family: "fontello";
+			content: "\f105";
+		}
+
+	    a {
+	    	color: @light-gray;
+
+	    	&:hover {
+	    		color: @light-gray;
+	    		text-decoration: underline;
+	    	}
+	    }
+	}
 
 #content {
 	.header {
@@ -192,7 +212,7 @@ hr {
 		}
 
 		&:last-child {
-			padding-bottom: 50px;
+			padding-bottom: 80px;
 		}
 	}
 }
@@ -863,27 +883,7 @@ h3 {
 
 @media (min-width: 768px) {
 
-	#breadcrumbs {
-		display: flex;
-	    justify-content: center;
-	    font-size: 14px;
-	    line-height: 3;
-	    color: @light-gray;
-
-	    .boundary:after {
-	    	font-family: "fontello";
-			content: "\f105";
-		}
-
-	    a {
-	    	color: @light-gray;
-
-	    	&:hover {
-	    		color: @light-gray;
-	    		text-decoration: underline;
-	    	}
-	    }
-	}
+	
 
 	.header {
 		.row {
