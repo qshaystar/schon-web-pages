@@ -1,8 +1,4 @@
-@lightest-gray: #939393;
-@light-gray: #747474;
-@md-gray: #868686;
-@md-gray-title: #535353;
-@heavy-gray-title: #3a3a3a;
+@import "basic.less";
 
 
 
@@ -67,7 +63,16 @@ p {
 .entry-title {
 	font-size: 24px;
 	line-height: 1.5;
+	font-weight: 700;
 	text-transform: uppercase;
+
+	a {
+		transition: color .4s;
+
+		&:hover {
+			color: @md-gray;
+		}
+	}
 }
 
 .entry-meta {
@@ -88,10 +93,12 @@ p {
 }
 
 .entry-content  {
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 10px;
 
 	p {
 		margin: 0;
+		margin-bottom: 20px;
 		line-height: 1.5;
 		color: @light-gray;
 	}
@@ -127,7 +134,9 @@ p {
 	>div {
 		margin-bottom: 30px;
 	}
+}
 
+.decoration {
 
 	hr {
 		margin: 0;
@@ -291,6 +300,22 @@ p {
 	.sidebar {
 		padding-top: 0;
 		text-align: right;
+
+		hr {
+			float: right;
+		}
+	}
+
+	.sidebar-content {
+
+		a {
+			transition: all .3s; 
+
+			&:hover {
+				font-weight: 500;
+				color: @heavy-gray-title;
+			}
+		}
 	}
 
 	.blog-categories, .popular-post, .blog-tags {
@@ -303,13 +328,6 @@ p {
 			order: 2;
 		}
 
-		a {
-			transition: color .4s; 
-
-			:hover {
-				color: @heavy-gray-title;
-			}
-		}
 	}
 
 	.blog-tags {

@@ -1,12 +1,10 @@
-@lightest-gray: #939393;
-@light-gray: #747474;
-@md-gray: #868686;
-@md-gray-title: #535353;
-@heavy-gray-title: #3a3a3a;
-
+@import "basic.less";
 @import "about.less";
 @import "contact.less";
 @import "blog-list-sidebar.less";
+@import "blog-detail.less";
+
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -79,6 +77,21 @@ hr {
 
 .icon-shopping-bag:before {
 	font-weight: 600;
+}
+
+::placeholder  {
+		font-size: 12px;
+  		
+}
+
+::-webkit-input-placeholder {
+		font-size: 12px;
+		
+}
+
+:-ms-input-placeholder {
+		font-size: 12px;
+		
 }
 
 
@@ -392,19 +405,6 @@ h3 {
 .desc {
 	margin-left: 15px;
 }
-
-::placeholder  {
-  		font-weight: bold;
-	}
-
-::-webkit-input-placeholder {
-		font-weight: bold;
-	}
-
-:-ms-input-placeholder {
-		font-weight: bold;
-	}
-
 
 
 .collection-banner {
@@ -769,16 +769,20 @@ h3 {
 
 .search-bar {
 
+
 	::placeholder  {
   		font-size: 14px;
+		font-weight: bold;
 	}
 
 	::-webkit-input-placeholder {
 		font-size: 14px;
+		font-weight: bold;
 	}
 
 	:-ms-input-placeholder {
 		font-size: 14px;
+		font-weight: bold;
 	}
 
 	input {
