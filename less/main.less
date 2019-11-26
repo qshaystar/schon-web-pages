@@ -65,6 +65,7 @@ hr {
 	font-size: 40px;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 	color: @heavy-gray-title;
 }
 
@@ -139,12 +140,35 @@ hr {
     text-align: right;
     font-weight: 600;
     background: white;
+
+    li {
+		transition: background-color .4s;
+    	&:hover {
+    		background-color: #eee;
+    	}
+    }
+
+    a { 
+    	transition: background-color .4s;
+    	&:hover {
+    		color: @heavy-gray-title;
+    		background-color: #eee;
+    	}
+    }
 }
 
 .nav-side {
 	display: flex;
 	font-size: 20px;
 	line-height: 29px;
+
+	a {
+		transition: color .3s;
+
+		:hover {
+			color: @md-gray;
+		}
+	}
 }
 
 .cart-sum {
@@ -205,12 +229,35 @@ hr {
 
 		&.gray-bg, &.img-bg {
 			padding: 30px 0;
-			text-align: center;
+			// text-align: center;
 		}
 
 	}
 }
 
+
+.blog-dropdown-toggle {
+	position: relative;
+}
+
+.blog-dropdown-menu {
+
+	a {
+		display: inline-block;
+		padding: .5rem 1rem;
+	}
+
+	li {
+		&:hover {
+    		
+    		background-color: #eee;
+    	}
+
+    	&:hover a {
+    		color: @heavy-gray-title;
+    	}
+	}
+}
 
 
 
@@ -979,7 +1026,7 @@ h3 {
 		height: 125px;
 
 		.banner-img {
-			object-position: top;
+			object-position: 20%;
 		}
 	}
 
@@ -1148,6 +1195,10 @@ h3 {
 	    line-height: 29px;
 	    font-weight: 500;
 	    color: @md-gray-title;
+
+	    a:hover {
+	    	background-color: transparent;
+	    }
 	}
 
 	.nav-link {
@@ -1173,6 +1224,17 @@ h3 {
 		div {
 			font-weight: 600;
 		}
+	}
+	
+	.blog-dropdown-menu {
+		position: absolute;
+		display: none;
+    	border: 1px solid #eee;
+    	border-radius: 5px;
+    	background: white;
+    	padding: 10px 20px;
+    	text-align: left;
+    	width: 300px;
 	}
 
 

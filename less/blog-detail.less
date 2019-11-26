@@ -85,10 +85,10 @@
 	}
 }
 
-.entry-content {
+.entry-content-images {
 
-	img {
-		padding: 10px;
+	li {
+		margin-bottom: 10px;
 	}
 }
 
@@ -202,9 +202,15 @@
 	.entry-content-images {
 		display: flex;
 	    flex-flow: column wrap;
+	    align-content: center;
 	    margin-top: 60px;
+	    margin-left: -10px;
     	margin-bottom: 70px;
 	    max-height: 800px;
+
+	    li {
+	    	margin-left: 10px;
+	    }
 	}
 
 
@@ -269,11 +275,11 @@
 	}
 
 	.entry-content-images {
-		margin: 0 auto;
+		
 		margin-top: 60px;
     	margin-bottom: 70px;
 		max-height: 500px;
-		width: 90%;
+		
 	}
 
 	.entry-author {
