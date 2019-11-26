@@ -8,10 +8,13 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fontello.css">
 
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
 	<script src="js/action.js"></script>
 </head>
 <body>
@@ -249,31 +252,150 @@
 
 				<h4 class="section-title">our workspace</h4>
 
-				<!-- <div class="row images-grid">
-
-					<span class="control-bar">
-						<a href="#" class="control-left"><i class="icon-angle-left"></i></a>
-						<a href="#" class="control-right"><i class="icon-angle-right"></i></a>
-					</span>
-
-					<div class="col-12">
-						<img src="https://placeimg.com/542/542/arch" alt="workspace">
-					</div>
-					<div class="col-12">
-
-						<div class="c0l-12 img-group">
-							<img src="https://placeimg.com/240/208/arch" alt="workspace">
-							<img src="https://placeimg.com/384/308/arch" alt="workspace">
+			<!-- 	<div class="slider">
+					<div class="row">
+						
+						<div class="col-5 workspace-img-full-width">
+							<img src="https://placeimg.com/542/542/arch" alt="workspace" class="img-fluid">
 						</div>
 
+						<div class="col-7">
+							<div class="row">
+								<div class="col-4 workspace-img">
+									<img src="https://placeimg.com/240/308/arch" alt="workspace" class="img-fluid">
+								</div>
+								<div class="col-8 workspace-img">
+									<img src="https://placeimg.com/384/308/arch" alt="workspace" class="img-fluid">
+								</div>
 
-						<div class="col-12 img-gropu">
-							<img src="https://placeimg.com/640/220/arch" alt="workspace">
+								<div class="col-12 workspace-img-height">
+									<img src="https://placeimg.com/640/220/arch" alt="workspace" class="img-fluid">
+								</div>
+							</div>
+
+							
 						</div>
-						
-						
 					</div>
+
+					<div class="row">
+						
+						<div class="col-5 workspace-img-full-width">
+							<img src="https://placeimg.com/542/542/arch" alt="workspace" class="img-fluid">
+						</div>
+
+						<div class="col-7">
+							<div class="row">
+								<div class="col-4 workspace-img">
+									<img src="https://placeimg.com/240/308/arch" alt="workspace" class="img-fluid">
+								</div>
+								<div class="col-8 workspace-img">
+									<img src="https://placeimg.com/384/308/arch" alt="workspace" class="img-fluid">
+								</div>
+
+								<div class="col-12 workspace-img-height">
+									<img src="https://placeimg.com/640/220/arch" alt="workspace" class="img-fluid">
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+
+					<div class="row">
+						
+						<div class="col-5 workspace-img-full-width">
+							<img src="https://placeimg.com/542/542/arch" alt="workspace" class="img-fluid">
+						</div>
+
+						<div class="col-7">
+							<div class="row">
+								<div class="col-4 workspace-img">
+									<img src="https://placeimg.com/240/308/arch" alt="workspace" class="img-fluid">
+								</div>
+								<div class="col-8 workspace-img">
+									<img src="https://placeimg.com/384/308/arch" alt="workspace" class="img-fluid">
+								</div>
+
+								<div class="col-12 workspace-img-height">
+									<img src="https://placeimg.com/640/220/arch" alt="workspace" class="img-fluid">
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+
 				</div> -->
+				
+				<div class="wrapper">
+					<div class="row slider">
+							
+							<div class="col-5 workspace-img-full-width">
+								<img src="https://placeimg.com/542/542/arch" alt="workspace" class="img-fluid">
+							</div>
+
+							<div class="col-7">
+								<div class="row">
+									<div class="col-4 workspace-img">
+										<img src="https://placeimg.com/240/308/arch" alt="workspace" class="img-fluid">
+									</div>
+									<div class="col-8 workspace-img">
+										<img src="https://placeimg.com/384/308/arch" alt="workspace" class="img-fluid">
+									</div>
+
+									<div class="col-12 workspace-img-height">
+										<img src="https://placeimg.com/640/220/arch" alt="workspace" class="img-fluid">
+									</div>
+								</div>
+
+								
+							</div>
+
+							<div class="col-5 workspace-img-full-width">
+								<img src="https://placeimg.com/542/542/nature" alt="workspace" class="img-fluid">
+							</div>
+
+							<div class="col-7">
+								<div class="row">
+									<div class="col-4 workspace-img">
+										<img src="https://placeimg.com/240/308/animals" alt="workspace" class="img-fluid">
+									</div>
+									<div class="col-8 workspace-img">
+										<img src="https://placeimg.com/384/308/animals" alt="workspace" class="img-fluid">
+									</div>
+
+									<div class="col-12 workspace-img-height">
+										<img src="https://placeimg.com/640/220/nature" alt="workspace" class="img-fluid">
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-5 workspace-img-full-width">
+								<img src="https://placem.at/things?w=542&h=542" alt="workspace" class="img-fluid">
+							</div>
+
+							<div class="col-7">
+								<div class="row">
+									<div class="col-4 workspace-img">
+										<img src="https://placem.at/things?w=240&h=308" alt="workspace" class="img-fluid">
+									</div>
+									<div class="col-8 workspace-img">
+										<img src="https://placem.at/things?w=384&h=308" alt="workspace" class="img-fluid">
+									</div>
+
+									<div class="col-12 workspace-img-height">
+										<img src="https://placem.at/things?w=640&h=220" alt="workspace" class="img-fluid">
+									</div>
+								</div>
+							</div>
+					</div>
+
+				</div>
+				
+
+
+
 				
 			</div>
 		</div>

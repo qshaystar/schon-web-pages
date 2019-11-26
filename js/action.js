@@ -22,4 +22,29 @@ $(document).ready(function(){
 		
 		$('.nav').slideToggle("slow");
 	});
+
+	 $('.slider').slick({
+        dots: true,
+        arrows: true,
+	  	infinite: false,
+	  	speed: 1000,
+	  	slidesToShow: 2,
+	  	slidesToScroll: 2,
+	  	// autoplay: true,
+
+	  	responsive: [
+	  	   {
+	  	     breakpoint: 420,
+	  	     settings: {
+	  	       slidesToShow: 1,
+	  	       slidesToScroll: 1,
+	  	       infinite: true,
+	  	       dots: true,
+	  	       arrows: false,
+	  	       // autoplay: true,
+	  	     }
+	  	   }
+	  	]   
+    });
+            
 });
