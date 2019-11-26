@@ -20,7 +20,7 @@
 		.social-icons {
 
 			a {
-				font-size: 14px;
+				font-size: 16px;
 				transition: color .4s;
 
 				&:hover {
@@ -76,20 +76,19 @@
     	background-color: @md-gray-title;
 	    width: 35px;
 	    height: 35px;
-	    transition: background-color .3s;
+	    transition: background-color .5s;
 
 	    &:hover {
 	    	background-color: white;
+	    }
+
+	    &:hover a {
+	    	color:  @md-gray-title;;
 	    }
     }
 
     a {
     	color: white;
-    	transition: color .3s;
-
-    	&:hover {
-    		color: @md-gray-title;
-    	}
     }
 }
 
@@ -138,13 +137,48 @@
  
 .workspace {
 
-	.slick-dots li button:before {
-		content: "——";
-		font-weight: bold;
+
+	.slick-prev {
+			height: 50px;
+
+			&:before {
+				font-family: "fontello";
+				content: "\f104";
+				color: @md-gray;
+				font-size: 20px;
+				opacity: .7;
+
+			}
+
+			&:hover:before {
+				color: black;
+			}
+	}
+
+	.slick-next {
+		height: 50px;
+
+		&:before {
+			font-family: "fontello";
+			content: "\f105";
+			color: @md-gray;
+			font-size: 20px;
+			opacity: .7;
+		}
+
+		&:hover:before {
+				color: black;
+			}
+
+	}
+
+	.wrapper {
+		padding: 0 15px;
 	}
 
 	img {
 		object-fit: cover;
+		object-position: center;
 	    width: 100%;
 	    height: 100%;
 	}
@@ -160,47 +194,21 @@
 	}
 
 	.workspace-img-full-width {
-			height: 259px;
+			height: 307px;
+	}
+
+	.workspace-img {
+		height: 182px;
 	}
 
 	.workspace-img-height {
 		margin-top: 5px;
+		height: 120px;
 	}
 
 
 }
 
-
-
-@media (min-width: 375px) {
-
-	.workspace {
-		.workspace-img-full-width {
-				height: 307px;
-		}
-	}
-	
-}
-
-@media (min-width: 414px) {
-
-	.workspace {
-		.workspace-img-full-width {
-				height: 340px;
-		}
-	}
-	
-}
-
-@media (min-width: 414px) {
-
-	.workspace {
-		.workspace-img-full-width {
-				height: 350px;
-		}
-	}
-	
-}
 
 
 // tablet
@@ -225,40 +233,11 @@
 
 	.workspace {
 
-
-		.slick-prev {
-			height: 50px;
-
-			&:before {
-				font-family: "fontello";
-				content: "\f104";
-				color: @md-gray;
-				font-size: 30px;
-				opacity: .7;
-
-			}
-
-			&:hover:before {
-				color: black;
-			}
-	}
-
-	.slick-next {
-		height: 50px;
-
-		&:before {
-			font-family: "fontello";
-			content: "\f105";
-			color: @md-gray;
+		.slick-prev, .slick-next {
 			font-size: 30px;
-			opacity: .7;
 		}
 
-		&:hover:before {
-				color: black;
-			}
 
-	}
 
 	.slick-dots {
 		
@@ -269,6 +248,8 @@
 				width: 65px;
 
 				&:before {
+					content: "——";
+					font-weight: bold;
 					width: 65px;
 					font-size: 30px;
 				}
@@ -280,9 +261,6 @@
 			padding: 0 35px;
 		}
 
-		.workspace-img-full-width {
-			height: 275px;
-		}
 	}
 }
 

@@ -10,7 +10,7 @@
   color: #747474;
 }
 .intro .social-icons a {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-transition: color 0.4s;
   -o-transition: color 0.4s;
   transition: color 0.4s;
@@ -56,21 +56,18 @@
   background-color: #535353;
   width: 35px;
   height: 35px;
-  -webkit-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .cover li:hover {
   background-color: white;
 }
+.cover li:hover a {
+  color: #535353;
+}
 .cover a {
   color: white;
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
-}
-.cover a:hover {
-  color: #535353;
 }
 .person {
   margin: 15px 0 35px 0;
@@ -110,13 +107,40 @@
   font-weight: 600;
   color: #939393;
 }
-.workspace .slick-dots li button:before {
-  content: "——";
-  font-weight: bold;
+.workspace .slick-prev {
+  height: 50px;
+}
+.workspace .slick-prev:before {
+  font-family: "fontello";
+  content: "\f104";
+  color: #868686;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.workspace .slick-prev:hover:before {
+  color: black;
+}
+.workspace .slick-next {
+  height: 50px;
+}
+.workspace .slick-next:before {
+  font-family: "fontello";
+  content: "\f105";
+  color: #868686;
+  font-size: 20px;
+  opacity: 0.7;
+}
+.workspace .slick-next:hover:before {
+  color: black;
+}
+.workspace .wrapper {
+  padding: 0 15px;
 }
 .workspace img {
   -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
   width: 100%;
   height: 100%;
 }
@@ -133,25 +157,14 @@
   padding-right: 2px;
 }
 .workspace .workspace-img-full-width {
-  height: 259px;
+  height: 307px;
+}
+.workspace .workspace-img {
+  height: 182px;
 }
 .workspace .workspace-img-height {
   margin-top: 5px;
-}
-@media (min-width: 375px) {
-  .workspace .workspace-img-full-width {
-    height: 307px;
-  }
-}
-@media (min-width: 414px) {
-  .workspace .workspace-img-full-width {
-    height: 340px;
-  }
-}
-@media (min-width: 414px) {
-  .workspace .workspace-img-full-width {
-    height: 350px;
-  }
+  height: 120px;
 }
 @media (min-width: 768px) {
   .intro .social-media {
@@ -165,31 +178,9 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .workspace .slick-prev {
-    height: 50px;
-  }
-  .workspace .slick-prev:before {
-    font-family: "fontello";
-    content: "\f104";
-    color: #868686;
-    font-size: 30px;
-    opacity: 0.7;
-  }
-  .workspace .slick-prev:hover:before {
-    color: black;
-  }
+  .workspace .slick-prev,
   .workspace .slick-next {
-    height: 50px;
-  }
-  .workspace .slick-next:before {
-    font-family: "fontello";
-    content: "\f105";
-    color: #868686;
     font-size: 30px;
-    opacity: 0.7;
-  }
-  .workspace .slick-next:hover:before {
-    color: black;
   }
   .workspace .slick-dots li {
     width: 65px;
@@ -198,14 +189,13 @@
     width: 65px;
   }
   .workspace .slick-dots li button:before {
+    content: "——";
+    font-weight: bold;
     width: 65px;
     font-size: 30px;
   }
   .workspace .wrapper {
     padding: 0 35px;
-  }
-  .workspace .workspace-img-full-width {
-    height: 275px;
   }
 }
 @media (min-width: 1024px) {
@@ -549,7 +539,7 @@ p.month {
 .blog-menu a {
   color: #747474;
 }
-.blog-menu .search-bar {
+.blog-header-bar span {
   display: none;
 }
 .single-entry .entry-inner {
@@ -596,6 +586,17 @@ p.month {
   top: 0;
   right: 0;
   font-style: normal;
+}
+.entry-content-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 .entry-content-images li {
   margin-bottom: 10px;
@@ -674,8 +675,10 @@ p.month {
 }
 @media (min-width: 768px) {
   .blog-menu .search-bar {
-    display: block;
     padding-right: 8px;
+  }
+  .blog-header-bar span {
+    display: inline;
   }
   .single-entry .entry-inner {
     top: -70px;
@@ -685,15 +688,6 @@ p.month {
     padding-right: 35px;
   }
   .entry-content-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column wrap;
-    flex-flow: column wrap;
-    -ms-flex-line-pack: center;
-    align-content: center;
     margin-top: 60px;
     margin-left: -10px;
     margin-bottom: 70px;
@@ -1398,38 +1392,38 @@ h3.banner-title {
   display: flex;
   line-height: 3;
 }
-.search-bar ::-webkit-input-placeholder {
+.subscribe-bar ::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar :-ms-input-placeholder {
+.subscribe-bar :-ms-input-placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar ::-ms-input-placeholder {
+.subscribe-bar ::-ms-input-placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar ::placeholder {
+.subscribe-bar ::placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar ::-webkit-input-placeholder {
+.subscribe-bar ::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar :-ms-input-placeholder {
+.subscribe-bar :-ms-input-placeholder {
   font-size: 14px;
   font-weight: bold;
 }
-.search-bar input {
+.subscribe-bar input {
   border: none;
   padding: 10px 18px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   width: 60%;
 }
-.search-bar .button {
+.subscribe-bar .button {
   position: relative;
   left: -3px;
   border: none;
@@ -1678,6 +1672,9 @@ h3.banner-title {
   .header-top .account li {
     padding: 0.75rem 1.5rem;
   }
+  .header-top .account a:hover {
+    background-color: transparent;
+  }
   .header-top li {
     -webkit-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
@@ -1767,6 +1764,9 @@ h3.banner-title {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+  }
+  .subscribe-bar .button {
+    padding: 10px 9px;
   }
   #content > div {
     padding-top: 100px;

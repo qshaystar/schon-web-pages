@@ -73,13 +73,13 @@ $(document).ready(function(){
 
 	  	responsive: [
 	  	   {
-	  	     breakpoint: 430,
+	  	     breakpoint: 450,
 	  	     settings: {
 	  	       slidesToShow: 1,
 	  	       slidesToScroll: 1,
 	  	       infinite: true,
-	  	       dots: true,
-	  	       arrows: false,
+	  	       dots: false,
+	  	       arrows: true,
 	  	       autoplay: true,
 	  	     }
 	  	   }
