@@ -7,13 +7,13 @@ $(document).ready(function(){
 
 		hideNav: function() {
 			if($('.nav').length>0) {
-				$('.nav').slideUp();
+				$('.nav').removeClass('show');
 			}
 		},
 
 		hideAccount: function() {
 			if($('.account').length>0) {
-				$('.account').slideUp();
+				$('.account').removeClass('show');
 			}
 		},
 
@@ -25,8 +25,6 @@ $(document).ready(function(){
 
 	};
 
-	
-
 
 
 
@@ -37,7 +35,7 @@ $(document).ready(function(){
 		init.hideNav();
 		
 
-		$('.account').slideToggle("slow");
+		$('.account').toggleClass('show');
 	});
 
 
@@ -48,7 +46,7 @@ $(document).ready(function(){
 		init.hideDropdown();
 		init.hideAccount();
 		
-		$('.nav').slideToggle("slow");
+		$('.nav').toggleClass('show');
 	});
 
 
@@ -60,30 +58,8 @@ $(document).ready(function(){
 	});
 
 
-	// workspace slider
+	
 
-	 $('.slider').slick({
-        dots: true,
-        arrows: true,
-	  	infinite: false,
-	  	speed: 1000,
-	  	slidesToShow: 2,
-	  	slidesToScroll: 2,
-	  	autoplay: true,
 
-	  	responsive: [
-	  	   {
-	  	     breakpoint: 450,
-	  	     settings: {
-	  	       slidesToShow: 1,
-	  	       slidesToScroll: 1,
-	  	       infinite: true,
-	  	       dots: false,
-	  	       arrows: true,
-	  	       autoplay: true,
-	  	     }
-	  	   }
-	  	]   
-    });
             
 });
