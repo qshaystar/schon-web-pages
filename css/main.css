@@ -757,6 +757,110 @@ p.month {
     padding-right: 10px;
   }
 }
+#content .products {
+  padding-top: 0;
+}
+.product-option-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid #939393;
+  border-bottom: 1px solid #939393;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+.product-option-menu a {
+  padding: 5px 10px;
+  color: #747474;
+}
+.menu-close {
+  padding: 20px;
+  text-align: right;
+  font-size: 20px;
+}
+.slide-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: white;
+  z-index: 10;
+  width: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.slide-menu.width {
+  width: 90%;
+}
+.slide-menu .sidebar-title {
+  padding: 0 20px;
+}
+.slide-menu .sidebar-content {
+  padding: 0 35px 20px 20px;
+}
+.filter-content h5 {
+  font-size: 14px;
+  line-height: 6;
+  color: #535353;
+}
+.filter-content .options {
+  padding-bottom: 12px;
+  color: #747474;
+}
+.filter-content .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1;
+}
+.filter-content .brand-name {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 8px;
+}
+.filter-content .range-bar {
+  border-radius: 5px;
+  height: 8px;
+  background: #eee;
+}
+.filter-content .range {
+  position: relative;
+  left: 10%;
+  border-radius: 5px;
+  width: 65%;
+  height: 8px;
+  background: #535353;
+}
+.filter-content .start {
+  position: absolute;
+  top: -13px;
+  left: -15px;
+  font-size: 16px;
+}
+.filter-content .end {
+  position: absolute;
+  top: -13px;
+  right: -15px;
+  font-size: 16px;
+}
+.filter-content .price-range {
+  display: inline-block;
+  line-height: 6;
+  color: #535353;
+}
+.filter-content .btn {
+  float: right;
+  margin-top: 25px;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -797,7 +901,7 @@ a:hover {
   text-decoration: none;
 }
 hr {
-  margin: 50px 0;
+  margin: 0;
 }
 .boundary:after {
   content: "|";
@@ -835,6 +939,9 @@ hr {
 }
 :-ms-input-placeholder {
   font-size: 12px;
+}
+.mt-19 {
+  margin-top: 19px;
 }
 #header {
   padding: 16px 0;
@@ -1347,6 +1454,9 @@ h3.banner-title {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.footer-top hr {
+  margin: 50px 0;
+}
 .pros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1785,9 +1895,6 @@ h3.banner-title {
   p {
     margin: 10px 0;
   }
-  hr {
-    margin: 70px 0;
-  }
   .full-padding {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1977,6 +2084,9 @@ h3.banner-title {
   .footer-top {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+  .footer-top hr {
+    margin: 70px 0;
   }
   .footer-top .subscribe,
   .footer-top .social-media {

@@ -25,9 +25,6 @@ $(document).ready(function(){
 
 	};
 
-	
-
-
 
 
 	$('.user-toggle').click(function(e) {
@@ -51,6 +48,20 @@ $(document).ready(function(){
 		$('.nav').slideToggle("slow");
 	});
 
+
+	// mobile product slide menu
+
+	$('.open-filter').click(function(e) {
+		$('.slide-menu').addClass('width');
+		$('body').css('background-color', 'rgba(0,0,0,0.4)');
+		$('.gray-bg').css('background-color', 'rgba(0,0,0,0.2)');
+	});
+
+	$('.menu-close').click(function(e) {
+		$('.slide-menu').removeClass('width');
+		$('body').css('background-color', 'white');
+		$('.gray-bg').css('background-color', '#f6f6f6');
+	});
 
 
 	// dropdown menu

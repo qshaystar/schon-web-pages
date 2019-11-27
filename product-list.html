@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Product List</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fontello.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/action.js"></script>
+</head>
+<body>
+	<div id="header">
+
+		<div class="header-bottom wide-header container-fluid">
+
+			<div class="head-left clearfix">
+				<div class="logo">
+					<img src="images/logo.png" alt="schon">
+				</div>
+
+				<div class="contact-info">
+					<a href="tel:+1-555-333-22-11">
+						+1 (555) 333 22 11
+					</a>
+				</div>
+			</div>
+			
+
+			<div id="nav-bar">
+
+				<nav class="nav text-uppercase">
+				  <a class="nav-link" href="index.html">Home</a>
+				  <a class="nav-link dropdown" href="#">Products</a>
+				  <a class="nav-link" href="#">About</a>
+				   <div class="blog-dropdown-toggle">
+				  	<a class="nav-link dropdown" href="#">Blog</a>
+
+				  	<ul class="blog-dropdown-menu">
+				  		<li>
+				  			<a href="blog-list-sidebar.html">blog list sidebar</a>
+				  		</li>
+				  		<li>
+				  			<a href="blog-detail.html">blog detail full width</a>
+				  		</li>	
+				  	</ul>
+				  </div>
+				  <a class="nav-link" href="contact.html">Contact</a>
+				  
+				</nav>
+
+				<ul class="nav-side ">
+
+
+					<li class="menu-toggle">
+						<a href="#">
+							<i class="icon-menu"></i>
+						</a>
+					</li>
+
+
+					<li>
+						<a href="#">
+							<i class="icon-search"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<i class="icon-heart-empty"></i>
+						</a>
+					</li>
+
+					<li id="cart">
+						<a href="#">
+							<i class="icon-shopping-bag"></i>
+						</a>
+						<div class="qty">3</div>
+					</li>
+
+				</ul>
+
+			</div>
+			
+		</div>
+
+		
+
+	</div>
+
+	<div id="content">
+		
+		<div class="header gray-bg">
+			<div class="container">
+
+				<h2 class="h-title">chairs</h2>
+
+				<ul id="breadcrumbs">
+					<li class="boundary">
+						<a href="index.html">Home</a>
+					</li>
+
+					<li class="boundary">
+						<a href="#">Products</a>
+					</li>
+
+					<li>
+						Chairs
+					</li>
+					
+				</ul>
+				
+			</div>
+			
+		</div>
+
+
+		<div class="products">
+			
+			<ul class="product-option-menu container-fluid">
+					<li>
+						<a href="#" class="open-filter">Filter</a>
+					</li>
+					<li>
+						<a href="#">Catagories</a>
+					</li>
+			</ul>
+			
+			<div class="container">
+				
+				<div class="row">
+					
+					<aside class="col-12 col-lg-2 products-sidebar">
+
+						<div class="product-fiiter slide-menu">
+							<div class="menu-close">x</div>
+
+							<h4 class="sidebar-title">filter</h4>
+
+							<div class="sidebar-content">
+								<div class="filter-content">
+									<h5>Filter by Brands</h5>
+
+									<ul class="options">
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+										<li class="option">
+											<input type="checkbox">
+											<div class="brand-name">casali</div>
+											<div>2</div>
+										</li>
+									</ul>
+
+									
+								</div>
+								
+								<hr>
+
+								<div class="filter-content">
+									<h5>Filter by Price</h5>
+
+									<div class="options clearfix">
+										<div class="range-bar">
+											<div class="range">
+												<i class="icon-comment start"></i>
+												<i class="icon-comment end"></i>
+											</div>
+										</div>
+
+										<div class="price-range">
+											Price 
+											<span>$10</span>
+											<span>-</span>
+											<span>$599</span>
+										</div>
+										
+										<button class="btn btn-dark btn-sm">Filter</button>
+									</div>
+								</div>	
+							</div>
+
+						</div>
+
+						<div class="product-categories ">
+							<div class="menu-close">x</div>
+
+							<h4 class="sidebar-title">categories</h4>
+
+							<ul class="product-category sidebar-content">
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+								<li>
+									<a href="#">chairs</a>
+									12
+								</li>
+							</ul>
+
+						</div>
+
+						<div class="hot-sales">
+							<h4 class="sidebar-title">hot sales</h4>
+
+							<ul class="sidebar-content">
+								<li class="media">
+									  <img src="https://placeimg.com/79/79/any" class="mr-3" alt="hot sales">
+									  <div class="media-body">
+									    <h5 class="mt-0">Egon Wooden Chair</h5>
+									    <ul class="stars">
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star-empty"></i></li>
+										</ul>
+										<div class="discount">$75.00</div>
+										<div class="price">$55.00</div>
+									  </div>							
+								</li>
+
+								<li class="media">
+									  <img src="https://placeimg.com/79/79/any" class="mr-3" alt="hot sales">
+									  <div class="media-body">
+									    <h5 class="mt-0">Egon Wooden Chair</h5>
+								
+										<div class="price mt-1">$55.00</div>
+									  </div>							
+								</li>
+
+								<li class="media">
+									  <img src="https://placeimg.com/79/79/any" class="mr-3" alt="hot sales">
+									  <div class="media-body">
+									    <h5 class="mt-0">Egon Wooden Chair</h5>
+									    <ul class="stars">
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star"></i></li>
+											<li><i class="icon-star-empty"></i></li>
+										</ul>
+										<div class="discount">$75.00</div>
+										<div class="price">$55.00</div>
+									  </div>							
+								</li>
+
+								<li class="media">
+									  <img src="https://placeimg.com/79/79/any" class="mr-3" alt="hot sales">
+									  <div class="media-body">
+									    <h5 class="mt-0">Egon Wooden Chair</h5>
+								
+										<div class="price mt-1">$55.00</div>
+									  </div>							
+								</li>		
+							</ul>
+
+							
+						</div>
+						
+
+					</aside>
+
+					<div class="col-12 products-list">
+
+						<div class="display-setting">
+							<div class="results">
+								<div>Showing <span>1-9</span> of <span>65</span> results</div>
+								<div>View 
+									<ul>
+										<li>
+											<a href="#">9</a>
+										</li>
+										<li>
+											<a href="#">18</a>
+										</li>
+										<li>
+											<a href="#">27</a>
+										</li>
+										<li>
+											<a href="#">All</a>
+										</li>
+									</ul>
+									
+								</div>
+							</div>
+
+							<ul class="mode">
+								<li>
+									<a href="#" class="btn  btn-outline-secondary dropdown">
+										Default Sorting
+									</a>
+								</li>
+								<li>
+									<a href="#" class="btn  btn-outline-secondary">
+										<i>i</i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="btn  btn-outline-secondary">
+										<i class="icon-category"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<div class="col-12 feature-item">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="desc">
+									<ul class="stars">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star-empty"></i></li>
+									</ul>
+									<h4 class="product-name">Bombi Chair</h4>
+									<div class="price">&euro; 300,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+
+								<div class="desc">
+									
+									<h4 class="product-name mt-19">Marvelous Modern 3 Seate</h4>
+									<div class="price">&euro; 599,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="discount-label">15% Off</div>
+								
+								<div class="desc">
+									
+									<h4 class="product-name">Chair with armrests</h4>
+									<div class="price">&euro; 200,00</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 feature-item">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="desc">
+									<ul class="stars">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star-empty"></i></li>
+									</ul>
+									<h4 class="product-name">Bombi Chair</h4>
+									<div class="price">&euro; 300,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+
+								<div class="desc">
+									
+									<h4 class="product-name mt-19">Marvelous Modern 3 Seate</h4>
+									<div class="price">&euro; 599,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="discount-label">15% Off</div>
+								
+								<div class="desc">
+									
+									<h4 class="product-name">Chair with armrests</h4>
+									<div class="price">&euro; 200,00</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-12 feature-item">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="desc">
+									<ul class="stars">
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star"></i></li>
+										<li><i class="icon-star-empty"></i></li>
+									</ul>
+									<h4 class="product-name">Bombi Chair</h4>
+									<div class="price">&euro; 300,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+
+								<div class="desc">
+									
+									<h4 class="product-name mt-19">Marvelous Modern 3 Seate</h4>
+									<div class="price">&euro; 599,00</div>
+								</div>
+							</div>
+
+							<div class="col-12">
+								<div class="thumbnail">
+									<a href="#">
+										<img src="https://placeimg.com/275/275/any" alt="product" class="img-fluid">
+									</a>
+								</div>
+								
+								<div class="discount-label">15% Off</div>
+								
+								<div class="desc">
+									
+									<h4 class="product-name">Chair with armrests</h4>
+									<div class="price">&euro; 200,00</div>
+								</div>
+							</div>
+						</div>
+						
+						<nav aria-label="Page navigation">
+						  <ul class="pagination">						    
+						    <li class="page-item"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						     <li class="page-item"><a class="page-link" href="#">3</a></li>						    
+						  </ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
+	</div>
+
+	<div id="footer" class="gray-bg">
+			<div class="container footer-top">
+				<div class="row advantage">
+					<div class="col-12 col-md-6 col-lg-3 pros">
+						<i class="icon-flight"></i>
+						<div class="desc">
+							<h5>free shipping</h5>
+							<p>Free Shipping on all US Order</p>
+						</div>
+						
+					</div>
+					<div class="col-12  col-md-6 col-lg-3  pros">
+						<i class="icon-lifebuoy"></i>
+						<div class="desc">
+							<h5>support 24/7</h5>
+							<p>We support 24 hours a day</p>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-6 col-lg-3  pros">
+						<i class="icon-dropbox"></i>
+						<div class="desc">
+							<h5>gift cards</h5>
+							<p>Give perfect gift</p>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-6 col-lg-3  pros">
+						<i class=" icon-money"></i>
+						<div class="desc">
+							<h5>payment 100% secure</h5>
+							<p>Payment 100% secure</p>
+						</div>
+						
+					</div>	
+				</div>
+
+				<hr>
+
+				<div class="row info">
+					<div class="col-12 col-lg info-box">
+						<div class="logo">
+							<img src="images/logo-gray.png" alt="schon">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque quod odio.</p>
+
+						<div class="contact-desc">
+							<div class="address">
+								<i class="icon-location"></i>
+								<p>
+									Connauge Road Central Suite 18B, 148 <br>
+									New Yankee
+								</p>
+								
+							</div>
+							
+							<div class="phone">
+								<i class="icon-phone"></i>
+								<a href="tel:+1-555-333-22-11">
+									+1 (555) 333 22 11
+								</a>
+							</div>
+							<div class="mail">
+								<i class="icon-mail"></i>
+								<a href="mailto:info@schon.chair">
+								info@schon.chair
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Categories</h6>
+						<ul class="common-list">
+							<li><a href="#">Chairs</a></li>
+							<li><a href="#">Sofas</a></li>
+							<li><a href="#">Living</a></li>
+							<li><a href="#">Bedroom</a></li>
+							<li><a href="#">Tables</a></li>
+							<li><a href="#">New</a></li>
+						</ul>
+						
+					</div>
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Information</h6>
+						<ul class="common-list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Terms&Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Customer Service</a></li>
+							<li><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Account</h6>
+						<ul class="common-list">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order Tracking</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Shopping Cart</a></li>
+							<li><a href="#">Checkout</a></li>
+							
+						</ul>
+					</div>
+
+					<div class="col-12 col-lg info-box">
+						<div class="row">
+							<div class="subscribe col-md-6 col-lg-12">
+								<h6>Sing Up Neswletter</h6>
+								<div class="subscribe-bar">
+									<input type="text" placeholder="Your e-mail">
+									<button class="button">Subscribe</button>
+									 
+								</div>
+							</div>
+
+							<div class="social-media col-md-6 col-lg-12">
+								<h6>Follow Us</h6>
+								<ul class="social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-gplus"></i></a></li>
+									<li><a href="#"><i class="icon-youtube"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+								</ul>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container clearfix">
+					<div class="copyright">
+						&copy; <span>schön.</span>-All rights Received.
+					</div>
+					<div class="payment-methods">
+						<img src="images/payment-methods-logos.png" alt="payment-method">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+</html>
