@@ -3,51 +3,7 @@ $(document).ready(function(){
 
 	// mobile toggles
 
-	var init = {
-
-		hideNav: function() {
-			if($('.nav').length>0) {
-				$('.nav').slideUp();
-			}
-		},
-
-		hideAccount: function() {
-			if($('.account').length>0) {
-				$('.account').slideUp();
-			}
-		},
-
-		hideDropdown: function() {
-			if($('.blog-dropdown-menu').length>0) {
-				$('.blog-dropdown-menu').hide();
-			}
-		},
-
-	};
-
-
-
-	$('.user-toggle').click(function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		init.hideNav();
-		
-
-		$('.account').slideToggle("slow");
-	});
-
-
-	$('.menu-toggle').click(function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		init.hideDropdown();
-		init.hideAccount();
-		
-		$('.nav').slideToggle("slow");
-	});
-
+	
 
 	// mobile product slide menu
 
