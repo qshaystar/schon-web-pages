@@ -29,23 +29,19 @@
 	font-size: 20px;
 }
 
-
-
-
 .slide-menu {
 	position: fixed;
-	top: 0;
-    left: 0;
+	top: 0;    
     bottom: 0;
     background: white;
     z-index: 10;  
     width: 0;
     overflow-x: hidden;
-    transition: .5s;
+    transition: .3s;  
 
     &.width {
 		width: 90%;
-	}
+	}  
 
     .sidebar-title {
     	padding: 0 20px;
@@ -54,6 +50,47 @@
     .sidebar-content {
     	padding: 0 35px 20px 20px;
     }
+}
+
+.slide-right {
+	left: 0;
+	
+}
+
+.slide-left {
+	right: 0;
+
+	.menu-close {
+		text-align: left;
+	}
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 2;
+}
+
+.fade-out {
+	opacity: 0;
+	
+
+	&.in {
+		opacity: 1;
+		transition: opacity 1s linear;
+	}
+}
+
+
+
+
+.products-sidebar {
+	order: 2;
 }
 
 
@@ -85,7 +122,7 @@
 	.range-bar {
 		border-radius: 5px;
     	height: 8px;
-		background: #eee;
+		background: #b3b3b3;
 	}
 
 	.range {
@@ -97,19 +134,24 @@
 		background: @md-gray-title;
 	}
 
-	.start {
+	.pin {
 		position: absolute;
-	    top: -13px;
-	    left: -15px;
-	    font-size: 16px;
+	    top: -4px;
+	    border: 3px solid;
+	    border-radius: 50%;
+		width: 18px;
+	    height: 18px;
+	    background-color: white;
+	}
+
+	.start {
+		left: 0;
 	}
 
 	.end {
-		position: absolute;
-	    top: -13px;
-	    right: -15px;
-	    font-size: 16px;
+		right: 0;
 	}
+
 
 	.price-range {
 		display: inline-block;
@@ -124,7 +166,258 @@
 	
 }
 
+.product-categories {
+
+	.sidebar-content {
+		padding-top: 20px;
+		text-transform: uppercase;
+	    font-size: 13px;
+	    font-weight: 600;
+	}
+
+	.product-category {
+		font-size: 16px;
+	}
+
+	.category-qty {
+		float: right;
+	}
+
+	li {
+		border-bottom: 1px solid #eee;
+		padding: 5px 0;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	a {
+		color: @light-gray;
+	}
+}
+
+.hot-sales {
+	padding-top: 50px;
+
+	.media {
+		align-items: center;
+	}
+
+	h5 {
+		font-size: 16px;
+		color: @light-gray;
+	}
+
+	.price {
+		line-height: 20px
+	}
+}
 
 
+.products-list {
+
+	img {
+		width: 100%;
+	}
+
+	.product {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+
+.display-setting {
+	padding: 15px 0;
+}
+
+.results {
+	padding-top: 15px;
+	font-size: 14px;
+	text-align: center;
+	color: @light-gray;
+
+	span {
+		font-weight: 600;
+	}
+
+	.boundary {
+		&:after {
+			content: "/";
+			padding: 0 5px;
+		}		
+	}
+}
+
+.display-chooseing {
+	display: flex;
+	justify-content: center;
+
+	ul {
+		display: flex;
+		padding-left: 8px;
+	}
+
+	a {
+		color: @light-gray;
+	}
+}
+
+.mode {
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+
+	li {
+		margin-right: 5px;
+	}
+
+	a {
+		font-size: 14px;
+	}
+
+	.rounded-circle {
+		height: 35px;
+    	width: 35px;
+    	line-height: 33px;
+
+    	&.btn {
+    		padding: 0;
+    	}
+	}
+}
+
+.pagination {
+	justify-content: center;
+	padding: 30px 0;
+
+	.page-item {
+		padding: 0 3px;
+	}
+
+	.page-link {
+		border: none;
+		font-weight: 600;
+		color: @light-gray;
+		background-color: #f8f8f8;
+	}
+}
+
+
+// tablet
+
+@media (min-width: 768px) {
+
+	.slide-menu {
+
+	&.width {
+		width: 50%;
+		}
+	}
+
+
+	.display-setting {
+		display: flex;
+		justify-content: space-between;
+
+		.display-chooseing {
+			justify-content: flex-start;
+		}
+	}
+
+	
+	.hot-sales {
+
+		.sidebar-content {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.media {
+			padding-right: 30px;
+		}
+	}
+	
+}
+
+
+
+// desktop 
+
+@media (min-width: 1024px) {
+
+	.product-option-menu {
+		display: none;
+	}
+
+	.products-sidebar {
+		order: -1;
+		padding-top: 34px;
+
+		 .sidebar-title {
+			padding: 0;
+			opacity: 1;
+		}
+
+		.sidebar-content {
+			padding: 0;
+			opacity: 1;
+		}
+
+	}
+
+	.menu-close {
+		display: none;
+	}
+
+	.product-filter {
+		position: static;
+		padding: 30px 20px 8px 20px;
+		width: auto;
+		background-color: #f4f4f4;
+		
+		.pin {
+			cursor: pointer;
+		}
+		
+	}
+
+	.product-categories {
+		position: static;
+		padding-top: 30px;
+		width: auto;
+		
+		.sidebar-content {
+			padding-top: 20px;
+		}
+		
+	}
+
+	.hot-sales {
+		padding-top: 30px;
+
+		.sidebar-content {
+			padding-top: 20px;
+		}
+
+		.media {
+			padding-right: 0;
+		}
+	}
+
+
+	.products-list {
+		.product {
+			padding-bottom: 50px;
+		}
+	}
+
+	.pagination {
+		padding-top: 70px;
+	}
+	
+	
+}
 
 
