@@ -600,6 +600,10 @@ p.month {
 }
 .entry-content-images li {
   margin-bottom: 10px;
+  width: 100%;
+}
+.entry-content-images img {
+  width: 100%;
 }
 .entry-author {
   -webkit-box-orient: vertical;
@@ -661,6 +665,9 @@ p.month {
 .comments a:hover {
   color: #868686;
 }
+.entry-comment-reply {
+  padding-left: 30px;
+}
 .comment-form {
   margin-bottom: 25px;
   padding-top: 100px;
@@ -695,6 +702,7 @@ p.month {
   }
   .entry-content-images li {
     margin-left: 10px;
+    width: auto;
   }
   .entry-author {
     -webkit-box-orient: horizontal;
@@ -943,6 +951,12 @@ hr {
 .mt-19 {
   margin-top: 19px;
 }
+<<<<<<< HEAD
+=======
+.show {
+  display: block !important;
+}
+>>>>>>> master
 #header {
   padding: 16px 0;
 }
