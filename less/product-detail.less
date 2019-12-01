@@ -1,0 +1,352 @@
+@import "basic.less";
+
+
+
+.porduct-carousel {
+	margin-bottom: 20px;
+
+	img {
+		width: 100%;
+	}
+
+	
+}
+
+.carousel-nav {
+
+	.slick-next {
+		right: 0;
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		background-color: rgba(255, 255, 255, .3);
+	}
+
+	.slick-prev {
+		left: 0;
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+		background-color: rgba(255, 255, 255, .3);
+		z-index: 1;
+	}
+
+	.slick-center {
+		opacity: 1;
+	}
+}
+
+.carousel-thumbnail {
+		padding: 0 5px;	
+		opacity: .5;
+}
+
+.product-images {
+	
+	padding-bottom: 40px;
+}
+
+.product-meta {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	li {
+		padding-right: 8px;
+	}
+
+	a {
+		color: @light-gray;
+	}
+	
+}
+
+.product-detail {
+
+	.wrapper {
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+
+	#breadcrumbs {
+		justify-content: flex-start;
+	}
+
+	.product-title {
+		font-size: 34px;
+		text-transform: uppercase;
+	    font-weight: 200;
+	    letter-spacing: 5px;
+	}
+
+	.intro {
+
+		p {
+			margin-top: 15px;
+		}
+	}
+
+	.price {
+		font-size: 25px;
+		line-height: 3;
+	}
+
+	.custom-select {
+		margin: 0 10px;
+	    border-radius: 20px;
+	    width: auto;
+
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	.btn {
+		border-color:#f46060;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 14px;
+		font-weight: 600;
+		background-color: #f46060;
+	}
+}
+
+.recommend {
+	display: flex;
+    font-size: 13px;
+    line-height: 3;
+
+	a {
+		padding: 0 8px;
+		color: @md-gray-title;
+	}
+}
+
+
+.product-intro {
+
+	.tabs {
+		justify-content: space-evenly;
+		border-bottom: 1px solid;
+		font-size: 13.5px;
+		text-transform: uppercase;
+
+		li {
+			margin-bottom: -2px;
+			padding:0 2.5px;
+			padding-bottom: 12px;
+			cursor: pointer;
+		}
+
+		.active {
+			border-bottom: 2px solid @md-gray-title;
+			color: @md-gray-title;
+			cursor: unset;
+		}
+	}
+
+	.intro-content {
+		display: none;
+
+		.review {
+			display: flex;
+			flex-wrap: wrap;
+			border-bottom: 1px dotted @light-gray;
+			padding: 12px 0;
+			line-height: 28px;
+
+			h6 {		
+				margin-bottom: 0;
+				line-height: 28px;
+			}
+
+			.date {
+				padding-left: 5px;
+				padding-right: 12px;
+				font-size: 14px;
+				color: @light-gray;
+			}
+		
+			p {
+				flex-grow: 2;
+			}
+			
+		}
+	}
+
+	.active {
+		display: block;
+	}
+
+	.intro {
+		padding-top: 20px;
+
+		p {
+			margin: 0;
+
+			&:first-child {
+				margin-bottom: 25px;
+			}
+		}
+	} 
+}
+
+.related-products {
+
+	img {
+		width: 100%;
+	}
+
+	.desc {
+		margin-top: 14px;
+	}
+
+	.marked-menu {
+			justify-content: center;
+			left: 8%;
+			right: 8%;
+			bottom: 5%;
+			font-size: 14px;
+
+			li {
+				border: none;
+				padding: 15px 0;
+
+				&:first-child {
+					flex-grow: 0;
+				}
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+
+			a {
+				padding: 0 10px;
+				transition: color .2s;
+
+				&:hover {
+					color: @md-gray-title;
+				}
+			}
+
+			.boundary {
+
+				&:after {
+					padding: 0 5px;
+					color: @light-gray;
+				}
+			}
+
+			i {
+				&:before {
+					margin-right: 0;
+				}
+			}
+		}
+
+}
+
+
+
+
+@media (min-width: 768px) {
+
+	.product-images {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.product-intro {
+
+		.tabs {
+			justify-content: center;
+			font-size: 16px;
+
+			li {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+
+
+@media(min-width: 1024px) {
+
+	.product-detail {
+
+		.row {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
+
+		.wrapper {
+			padding-top: 30px;
+		}
+
+		.col-lg-6 {
+			padding-left: 40px;
+			padding-right: 40px;
+
+		}
+
+		#breadcrumbs {
+			padding-top: 12px;
+		}
+
+		a {
+			&.reviews {
+				transition: color .5s;
+				&:hover {
+					color: @light-gray;
+				}
+			}
+		}
+	}
+
+	.product-meta {
+
+		a {
+			transition: color .3s;
+
+			&:hover {
+				color: @lightest-gray;
+			}
+		}
+	}
+
+	.product-intro {
+
+		.tabs {
+
+			li {
+				transition: .3s ease-in;
+
+				&:hover {
+					border-bottom: 2px solid;
+					color: @md-gray-title;
+				}
+			}
+		}
+	}
+
+	.related-products {
+
+		.thumbnail {
+			border: 1px solid white;
+			transition: border .3s;
+
+			&:hover {
+				box-shadow: none;
+				border: 1px solid #ccc;
+			}
+		}
+	}
+
+}
+

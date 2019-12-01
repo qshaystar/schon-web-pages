@@ -67,7 +67,7 @@
 
 .overlay {
 	display: none;
-	position: absolute;
+	position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -335,7 +335,7 @@
 		}
 
 		.media {
-			padding-right: 30px;
+			width: 300px;
 		}
 	}
 	
@@ -401,8 +401,13 @@
 			padding-top: 20px;
 		}
 
-		.media {
-			padding-right: 0;
+
+		h5 {
+			transition: color .3s;
+
+			&:hover {
+				color: @md-gray-title;
+			}
 		}
 	}
 
@@ -411,10 +416,36 @@
 		.product {
 			padding-bottom: 50px;
 		}
+
+		.results {
+
+			a {
+				transition: font-weight .5s;
+				&:hover {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+
+	.product-name {
+		transition: color .3s;
+
+		&:hover {
+			color: @md-gray-title;
+		}
 	}
 
 	.pagination {
 		padding-top: 70px;
+
+		.page-link {
+
+			&:hover {
+				color: @md-gray-title;
+			}
+		}
 	}
 	
 	

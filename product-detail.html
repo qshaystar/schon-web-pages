@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Product Detail</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fontello.css">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/action.js"></script>
+	<script src="js/carousel.js"></script>
+</head>
+<body>
+	<div id="header">
+
+		<div class="header-bottom wide-header container-fluid">
+
+			<div class="head-left clearfix">
+				<div class="logo">
+					<img src="images/logo.png" alt="schon">
+				</div>
+
+				<div class="contact-info">
+					<a href="tel:+1-555-333-22-11">
+						+1 (555) 333 22 11
+					</a>
+				</div>
+			</div>
+			
+
+			<div id="nav-bar">
+
+				<nav class="nav text-uppercase">
+				  <a class="nav-link" href="index.html">Home</a>
+
+				  <div class="custom-dropdown-toggle">
+				  	<a class="nav-link dropdown" href="#">Products</a>
+
+				  	<ul class="custom-dropdown-menu">
+				  		<li>
+				  			<a href="product-list.html">product list</a>
+				  		</li>
+				  		<li>
+				  			<a href="#">product detail</a>
+				  		</li>	
+				  	</ul>
+				  </div>
+
+				  <a class="nav-link" href="about.html">About</a>
+
+				   <div class="custom-dropdown-toggle">
+				  	<a class="nav-link dropdown" href="#">Blog</a>
+
+				  	<ul class="custom-dropdown-menu">
+				  		<li>
+				  			<a href="blog-list-sidebar.html">blog list sidebar</a>
+				  		</li>
+				  		<li>
+				  			<a href="blog-detail.html">blog detail full width</a>
+				  		</li>	
+				  	</ul>
+				  </div>
+				  
+				  <a class="nav-link" href="contact.html">Contact</a>
+				  
+				</nav>
+
+				<ul class="nav-side ">
+
+
+					<li class="menu-toggle">
+						<a href="#">
+							<i class="icon-menu"></i>
+						</a>
+					</li>
+
+
+					<li>
+						<a href="#">
+							<i class="icon-search"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<i class="icon-heart-empty"></i>
+						</a>
+					</li>
+
+					<li id="cart">
+						<a href="#">
+							<i class="icon-shopping-bag"></i>
+						</a>
+						<div class="qty">3</div>
+					</li>
+
+				</ul>
+
+			</div>
+			
+		</div>
+
+		
+
+	</div>
+
+	<div id="content">
+
+		<div class="product-detail gray-bg">
+			<div class="container">
+				<div class="row wrapper">
+					<div class="col-12 col-lg-6">
+						<ul class="product-meta">
+							<li>
+								<a href="#">
+									<i class="icon-heart"></i>27
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-chat"></i>12
+								</a>
+							</li>
+
+							<li class="entry-meta-share">
+								<a href="#">
+									<i class="icon-share"></i>14
+								</a>
+							</li>
+						</ul>
+
+						<div class="product-images">
+							<div class="porduct-carousel">
+								<div>
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div>
+									<img src="https://placeimg.com/510/450/animals" alt="product" class="img-fluid">
+								</div>
+								<div>
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div>
+									<img src="https://placeimg.com/510/450/animals" alt="product" class="img-fluid">
+								</div>
+								<div>
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div>
+									<img src="https://placeimg.com/510/450/people" alt="product" class="img-fluid">
+								</div>
+
+							</div>
+
+							<div class="carousel-nav">
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/animals" alt="product" class="img-fluid">
+								</div>
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/animals" alt="product" class="img-fluid">
+								</div>
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/nature" alt="product" class="img-fluid">
+								</div>
+								<div class="carousel-thumbnail">
+									<img src="https://placeimg.com/510/450/people" alt="product" class="img-fluid">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<ul id="breadcrumbs">
+							<li class="boundary">
+								<a href="#">Chairs</a>
+							</li>
+
+							<li>
+								<a href="#">Products</a>
+							</li>
+							
+						</ul>
+
+						<h2 class="product-title">kaila fabric chair</h2>
+
+						<div class="recommend">
+							<ul class="stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+							</ul>
+
+							<a href="#" class="reviews">Reviews(6)</a>
+						</div>
+
+						<ul class="product-meta">
+							<li>
+								<a href="#">
+									<i class="icon-share"></i>
+									share
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-exchange"></i>
+									compare
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-heart"></i>
+									add to wishlist
+								</a>
+							</li>
+						</ul>
+
+						<hr>
+
+						<div class="intro">
+							<p>
+								Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair. 
+							</p>
+							<br>	
+							<p>
+								Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. 
+							</p>
+
+
+						</div>
+
+						<hr>
+
+						<span class="price">
+							$ 79.00
+						</span>
+						<span class="discount">
+							399.00
+						</span>
+
+						<div class="add-panel">
+							<label for="qty">QTY:</label>
+							<select class="custom-select" id="qty">
+							    <option value="1" selected>1</option> 
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							  </select>
+							  <a href="#" class="btn btn-danger rounded-pill text-uppercase">add to cart</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="product-intro">
+			<div class="container">
+				<ul class="tabs">
+					<li class="tab-link active">
+						description
+					</li>
+					<li class="tab-link">
+						information
+					</li>
+					<li class="tab-link">
+						reviews(6)
+					</li>
+				</ul>
+
+				<div class="intro">
+					<div class="intro-content active">
+						<p>
+							Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair. 
+						</p>
+						<p>
+							Koila is a seat designed for restaurants and gastronomic places in general. Designed in collaboration with professional of restaurants and hotels field, this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe armchair. 		
+						</p>
+						<p>
+							Solid oak construction.
+						</p>
+						<p>
+							Back in plywood (2 faces oak veneer) or upholstered in fabric, leather or eco-leather.
+						</p>
+						<p>
+							Seat upholstered in fabric, leather or eco-leather.
+						</p>
+						<p>
+							H 830 x L 585 x P 540 mm.
+						</p>
+					</div>
+
+					<div class="intro-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro in suscipit provident, ea esse quaerat laboriosam sapiente eius amet, vel praesentium nisi voluptatibus obcaecati eaque, maiores sequi temporibus explicabo iure, quis consectetur itaque veniam. Labore iste beatae numquam est repudiandae explicabo, veniam ab fugiat at, sequi, vitae earum alias aut.
+						</p>
+						<p>
+							Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with restaurant professionals, it ensures comfort and an ideal posture, as there are armrests on both sides of the chair. 
+						</p>
+						
+					</div>
+
+					<div class="intro-content">
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<ul class="stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+							</ul>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consequuntur cum nihil cupiditate eum pariatur quas, non, commodi dolorem molestiae.</p>
+						</div>
+
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<ul class="stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+							</ul>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat porro numquam mollitia iste odit eaque, animi saepe quae error dolorum praesentium laboriosam sunt eligendi impedit provident voluptatem officia odio laborum ratione hic aliquid architecto ducimus quasi. Commodi eligendi dicta repellendus.</p>
+						</div>
+
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consequuntur cum nihil cupiditate eum pariatur quas, non, commodi dolorem molestiae.</p>
+						</div>
+
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consequuntur cum nihil cupiditate eum pariatur quas, non, commodi dolorem molestiae.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sequi?</p>
+						</div>
+
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<ul class="stars">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+							</ul>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti consequuntur cum nihil cupiditate eum pariatur quas, non, commodi dolorem molestiae.</p>
+
+						</div>
+
+						<div class="review">
+							<a href="#">
+								<h6>John Wick</h6>
+							</a>
+							<div class="date">
+								20.05.2015
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem assumenda molestias. Saepe impedit architecto dignissimos animi, nobis earum corrupti repellendus quam, blanditiis ea nihil harum facilis, soluta nulla laudantium beatae, provident possimus tempora? Nostrum repellat aspernatur reiciendis eos impedit pariatur itaque vel alias possimus, atque, reprehenderit, veritatis ab officia..</p>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div class="related-products">
+			<div class="container">
+				<h4 class="section-title">related products</h4>
+
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg full-padding">
+
+						<div class="thumbnail">
+							<a href="#">
+							<img src="images/lounge.png" alt="lounge" class="img-fluid">
+							</a>
+
+							<ul class="marked-menu shadow">
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-shopping-bag"></i>
+								</a>	
+							</li>
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-heart-empty"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-eye"></i>
+								</a>
+							</li>
+							</ul>
+							<ul class="stars on-pic">
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star"></i></li>
+								<li><i class="icon-star-empty"></i></li>
+							</ul>
+							<div class="new-label">new</div>
+						</div>
+						
+						
+							
+						<div class="desc">
+							<a href="#">
+								<h4 class="product-name">Puff Chair</h4>
+							</a>				
+							<div class="price">&euro; 287,00</div>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-4  col-lg full-padding">
+						<div class="thumbnail">
+							<a href="#">
+							<img src="images/lounge.png" alt="lounge" class="img-fluid">
+							</a>
+
+							<ul class="marked-menu shadow">
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-shopping-bag"></i>
+								</a>	
+							</li>
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-heart-empty"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-eye"></i>
+								</a>
+							</li>
+							</ul>
+						</div>
+						
+						
+					
+						<div class="desc">
+							<a href="#">
+								<h4 class="product-name">Bommbi Chair</h4>
+							</a>
+							<div class="price">&euro; 287,00</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4  col-lg full-padding">
+						<div class="thumbnail">
+							<a href="#">
+							<img src="images/lounge.png" alt="lounge" class="img-fluid">
+							</a>
+
+							<ul class="marked-menu shadow">
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-shopping-bag"></i>
+								</a>	
+							</li>
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-heart-empty"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-eye"></i>
+								</a>
+							</li>
+							</ul>
+						</div>
+						
+						
+						<div class="desc">
+							<a href="#">
+								<h4 class="product-name">Wooden Chair</h4>	
+							</a>
+							<div class="price">&euro; 287,00</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg  full-padding best-item">
+						<div class="thumbnail">
+							<a href="#">
+							<img src="images/lounge.png" alt="lounge" class="img-fluid">
+							</a>
+
+							<ul class="marked-menu shadow">
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-shopping-bag"></i>
+								</a>	
+							</li>
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-heart-empty"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-eye"></i>
+								</a>
+							</li>
+							</ul>
+
+							<div class="discount-label">15% Off</div>
+							<div class="new-label second">new</div>
+						</div>
+				
+						<div class="desc">
+							<h4 class="product-name">Puff Chair</h4>
+							<div class="price">&euro; 287,00</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4 col-lg  full-padding">
+
+						<div class="thumbnail">
+							<a href="#">
+							<img src="images/lounge.png" alt="lounge" class="img-fluid">
+							</a>
+
+							<ul class="marked-menu shadow">
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-shopping-bag"></i>
+								</a>	
+							</li>
+							<li class="boundary">
+								<a href="#">
+									<i class="icon-heart-empty"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="icon-eye"></i>
+								</a>
+							</li>
+							</ul>
+
+						</div>
+						
+						
+						<div class="desc">
+							<a href="#">
+								<h4 class="product-name">Bommbi Chair</h4>
+							</a>							
+							<div class="price">&euro; 200,00</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<div id="footer" class="gray-bg">
+			<div class="container footer-top">	
+
+				<div class="row info">
+					<div class="col-12 col-lg info-box">
+						<div class="logo">
+							<img src="images/logo-gray.png" alt="schon">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam doloremque quod odio.</p>
+
+						<div class="contact-desc">
+							<div class="address">
+								<i class="icon-location"></i>
+								<p>
+									Connauge Road Central Suite 18B, 148 <br>
+									New Yankee
+								</p>
+								
+							</div>
+							
+							<div class="phone">
+								<i class="icon-phone"></i>
+								<a href="tel:+1-555-333-22-11">
+									+1 (555) 333 22 11
+								</a>
+							</div>
+							<div class="mail">
+								<i class="icon-mail"></i>
+								<a href="mailto:info@schon.chair">
+								info@schon.chair
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Categories</h6>
+						<ul class="common-list">
+							<li><a href="#">Chairs</a></li>
+							<li><a href="#">Sofas</a></li>
+							<li><a href="#">Living</a></li>
+							<li><a href="#">Bedroom</a></li>
+							<li><a href="#">Tables</a></li>
+							<li><a href="#">New</a></li>
+						</ul>
+						
+					</div>
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Information</h6>
+						<ul class="common-list">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Terms&Conditions</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Customer Service</a></li>
+							<li><a href="#">FAQs</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-4 col-lg-2 info-box">
+						<h6>Account</h6>
+						<ul class="common-list">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order Tracking</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Shopping Cart</a></li>
+							<li><a href="#">Checkout</a></li>
+							
+						</ul>
+					</div>
+
+					<div class="col-12 col-lg info-box">
+
+						<div class="row">
+							<div class="subscribe col-md-6 col-lg-12">
+								<h6>Sing Up Neswletter</h6>
+								<p>
+									Subcribe now to get 15% off on any product
+								</p>
+								<div class="subscribe-bar bordered-ver">
+									<input type="text" placeholder="Your e-mail">
+									<button class="button"><i class="icon-angle-right"></i></button>
+								</div>
+							</div>
+							
+
+							<div class="social-media col-md-6 col-lg-12">
+								<h6>Follow Us</h6>
+								<ul class="social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="#"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-gplus"></i></a></li>
+									<li><a href="#"><i class="icon-youtube"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container clearfix">
+					<div class="copyright">
+						&copy; <span>schön.</span>-All rights Received.
+					</div>
+					<div class="payment-methods">
+						<img src="images/payment-methods-logos.png" alt="payment-method">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+</html>
