@@ -1,0 +1,498 @@
+@import "basic.less";
+
+
+#header.full-height {
+	.header-top {
+		a {
+			transition: color .3s;
+			&:hover {
+				color: @heavy-gray-title;
+			}
+		}
+	}
+}
+
+.full-height {
+
+	#breadcrumbs {
+		justify-content: flex-start;
+	}
+
+	.login {
+		display: flex;
+		justify-content: flex-end;
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.nav {
+		top: 93px;
+	}
+
+}
+
+.pull-right {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+.content-header {
+	padding-top: 30px;
+}
+
+
+// content
+
+
+.steps {
+	color: #bbb;
+
+	.active {
+		color: @heavy-gray-title;
+	}
+
+	.line {
+		background: #bbb;
+	    width: 1.5px;
+	    height: 50px;
+	    margin: 0 auto;
+	    margin-bottom: 15px;
+	}
+}
+
+.step {
+	text-align: center;
+	font-weight: 600;
+
+	.instruction {
+		padding: 15px 0;
+		font-size: 14px;
+		line-height: 1;
+	}
+}
+
+
+.circle {
+	display: inline-block;
+	border: 1.5px solid;
+	border-radius: 50%;
+	font-size: 30px;
+    font-weight: 600; 
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+
+
+
+.order-detail {
+	padding-bottom: 30px;
+}
+
+.order-head {
+	display: none;
+}
+
+.order-content {
+	padding: 0 15px;
+}
+
+.order-item {
+	position: relative;
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+
+	&:first-child {
+		border-top: 1px solid #ccc;
+	}
+
+	.mobile-order-head {
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+
+	>div {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 8px;
+	}
+
+	.col-12 {
+		&:last-child {
+			order: -1;
+		}
+	}
+
+	.thumbnail {
+		display: inline-block;
+		margin-bottom: 10px;
+		width: 50%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+
+	.product {
+		flex-wrap: wrap;
+
+		> a {
+			align-self: center;
+		}	
+	}
+
+	.product-name {
+		font-size: 18px;
+	}
+
+	.price {
+		font-size: 18px;
+	}
+
+	label {
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.custom-select {
+		border-color: #eee;
+		width: auto;
+		font-size: 14px;
+		background-color: #eee;
+	}
+
+	.delete {
+		position: absolute;
+		right: 10px;
+		color: #f05c5c;
+	}
+}
+
+.coupon {
+	padding: 20px;
+	text-align: center;
+
+	.btn {
+		margin-top: 15px;
+		padding-left: 16px;
+   		padding-right: 16px;
+		font-weight: 600;
+		background: #cba233;
+    	color: white;
+	}
+}
+
+.sh-title {
+	text-transform: uppercase;
+	line-height: 2;
+}
+
+.form-group {
+	.dropdown-btn {
+		position: absolute;
+	    right: 0px;
+	    top: 0;
+	    border-left: 1px solid #ced4da;
+	    padding: 0 10px;
+	    height: 38px;
+	    line-height: 38px;
+	    z-index: -1;
+	    color: #ced4da;
+	}
+}
+
+.shopping-info {
+
+	form {
+		padding: 30px 0;
+	}
+
+	.form-group {
+		position: relative;
+	}
+
+	.custom-select {
+		font-size: 14px;
+		background-color: transparent;
+		background: none;
+
+		&:focus {
+			background-color: transparent;
+		}
+	}
+
+	.btn {
+		padding-left: 16px;
+    	padding-right: 16px;
+	}
+
+	.disabled {
+		border-color:#ccc;
+		font-weight: 600;
+		color: @light-gray;
+		background-color: #eee;
+	}
+}
+
+.charge {
+
+	.bordered {
+		margin: 30px 0;
+		border: 1px solid #ccc;
+		padding: 25px 15px;
+	}
+}
+
+.checkout-btn.btn {
+		border-color: #88bd6e;
+		padding-left: 16px;
+    	padding-right: 16px;
+		font-weight: 600;
+		background-color: #88bd6e;
+}
+
+.charge-detail {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 600;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.charge-item {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: @light-gray;
+}
+
+.shipping-fee {
+	font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+	
+	.steps {
+		display: flex;
+		justify-content: center;
+
+		.circle {
+			margin: 0 15px;
+		}
+
+		.line {
+			position: relative;
+			top: 40px;
+			margin: 0;
+		    height: 1.5px;
+		    width: 80px;
+		}
+	}
+
+	.order-detail {
+		padding: 0;
+	}
+
+	.order-head {
+		display: flex;
+		padding: 15px 0;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: @light-gray;
+
+		.col {
+			text-align: center;
+		}
+	}
+
+	.mobile-order-head {
+		display: none;
+	}
+
+	.order-content {
+		padding: 0;
+	}
+
+	.order-item {
+		border-left:none;
+		border-right: none;
+
+		>div {
+			align-self: center;
+			margin-bottom: 0;
+		}
+
+		.col-12 {
+			&:last-child {
+				order: 2;
+			}
+		}
+
+		.product {
+			flex-wrap: nowrap;
+		}
+
+		.thumbnail {
+			margin-right: 8px;
+			margin-bottom: 0;
+			width: auto;
+		}
+
+		.delete {
+			position: static;
+		}
+	}
+
+	.coupon {
+		padding: 40px 0;
+
+		input {
+			position: relative;
+    		top: 2px;
+			display: inline-block;
+    		width: 30%;
+		}
+
+		.btn {
+			margin: 0;
+		}
+	}
+}
+
+
+@media (min-width: 1024px) {
+
+	.full-height {
+		position: relative;
+
+		.header-top {
+			display: flex;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.login {
+			padding-bottom: 0;
+			font-size: 14px;
+
+			li {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+
+		.header-bottom {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background-color: white;
+		}
+
+		.pull-right {
+			padding: 0;
+			background: transparent;
+		}
+
+		.white-space {
+			position: absolute;
+		    top: 42px;
+		    left: 50%;
+		    right: 0;
+		    bottom: 150px;	   
+		    background: white;
+
+		}
+
+		.nav-side {
+			z-index: 2;
+		}
+
+		.content-header {
+			padding-top: 60px;
+		}
+
+	}
+
+	.order-item {
+
+		.product {
+			justify-content: flex-start;
+		}
+
+		.thumbnail {
+			margin-right: 50px;
+			border: 1px solid white;
+			transition: border-color .3s;
+
+			&:hover {
+				box-shadow: none;
+				border-color: @light-gray;
+			}
+		}
+	}
+
+	.coupon {
+
+		input {
+			width: 20%;
+		}
+		
+	}
+
+	.form-group {
+		.dropdown-btn {
+			height: 48px;
+    		line-height: 48px;
+		}
+	}
+
+	.shopping-info {
+
+		.row {
+			margin-left: -40px;
+			margin-right: -40px;
+		}
+
+		.col-lg-6 {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.form-group {
+			&:nth-child(3) {
+				margin-bottom: 30px;
+			}
+		}
+
+		.custom-select {
+			height: 48px;
+		}
+
+	}
+
+	
+	.charge {
+
+		.bordered {
+			padding: 35px 40px;
+		}
+		
+
+		.btn {
+			float: right;
+		}
+	}
+	
+}
