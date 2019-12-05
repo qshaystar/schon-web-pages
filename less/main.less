@@ -6,6 +6,7 @@
 @import "product-list.less";
 @import "product-detail.less";
 @import "shopping-cart.less";
+@import "order-checkout.less";
 
 
 
@@ -879,9 +880,11 @@ h3 {
 		font-weight: bold;
 		color: white;
 	    background-color: @md-gray-title;
+	    transition: .3s;
 
 	      &:focus {
 	    	outline: 0;
+	    	background-color: @light-gray;
 	    }
 	}
 }
@@ -893,6 +896,10 @@ h3 {
 		border: 1px solid @light-gray;
 		border-radius: 30px;
 		width: 100%;
+
+		&:focus {
+			box-shadow: 0 0 0 0.1rem rgba(0,0,0,.25);
+		}
 	}
 
 	.button {
@@ -936,7 +943,7 @@ h3 {
 	}
 }
 
-.payment-methods {
+.payment-methods-img {
 	display: inline-block;
 }
 
@@ -1720,7 +1727,7 @@ h3 {
 		float: left;
 	}
 
-	.payment-methods {
+	.payment-methods-img {
 		float: right;
 	}
 
@@ -1735,7 +1742,7 @@ h3 {
 			justify-content: flex-end;
 		}
 
-		.copyright, .payment-methods {
+		.copyright, .payment-methods-img {
 			float: none;
 		}
 	

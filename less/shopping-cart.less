@@ -92,6 +92,9 @@
 
 .order-head {
 	display: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: @light-gray;
 }
 
 .order-content {
@@ -194,6 +197,7 @@
 }
 
 .form-group {
+
 	.dropdown-btn {
 		position: absolute;
 	    right: 0px;
@@ -205,6 +209,19 @@
 	    z-index: -1;
 	    color: #ced4da;
 	}
+
+}
+
+.custom-select.custom {
+		border-radius: 10px;
+		font-size: 14px;
+		height: 38px;
+		background-color: transparent;
+		background: none;
+
+		&:focus {
+			background-color: transparent;
+		}
 }
 
 .shopping-info {
@@ -215,16 +232,6 @@
 
 	.form-group {
 		position: relative;
-	}
-
-	.custom-select {
-		font-size: 14px;
-		background-color: transparent;
-		background: none;
-
-		&:focus {
-			background-color: transparent;
-		}
 	}
 
 	.btn {
@@ -308,9 +315,6 @@
 	.order-head {
 		display: flex;
 		padding: 15px 0;
-		font-weight: 600;
-		text-transform: uppercase;
-		color: @light-gray;
 
 		.col {
 			text-align: center;

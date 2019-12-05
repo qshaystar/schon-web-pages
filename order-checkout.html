@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Order Shopping Cart</title>
+	<title>Order Checkout</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="slick/slick.css">
@@ -17,9 +17,9 @@
 </head>
 <body>
 
-	<div id="header" class="gray-bg full-height">
+	<div id="header" class="img-bg full-height text-white">
 
-	<div class="container header-top">
+		<div class="container header-top">
 					<div class="contact-info">
 						<a href="tel:+1-555-333-22-11">
 							+1 (555) 333 22 11
@@ -120,7 +120,7 @@
 			</div>
 		
 			<div class="content-header container">
-				<h2 class="h-title">shopping cart</h2>
+				<h2 class="h-title text-white">check out</h2>
 
 				<ul id="breadcrumbs">
 					<li class="boundary">
@@ -128,7 +128,7 @@
 					</li>
 
 					<li>
-						Shopping Cart
+						Check Out
 					</li>
 						
 				</ul>
@@ -150,7 +150,7 @@
 
 				<div class="line"></div>
 				
-				<div class="step">
+				<div class="step active">
 					<div class="circle">02</div>
 					<div class="instruction">
 						Checkout
@@ -169,143 +169,12 @@
 			</div>
 		</div>
 
-		<div class="order-detail">
-			<div class="container">
-				<div class="row order-head">
-					<div class="col-5 col-lg-6">porduct</div>
-					<div class="col">price</div>
-					<div class="col">quantity</div>
-					<div class="col">total</div>
-					<div class="col-1"></div>
-				</div>
-
-				<div class="order-content">
-					<div class="row order-item">
-						<div class="col-12 col-md-5 col-lg-6 product">
-							
-							<div class="thumbnail">
-								<a href="#">
-									<img src="https://placeimg.com/106/106/any" alt="product" class="img-fluid">
-								</a>
-							</div>
-							<a href="#">
-								<h4 class="product-name">Marvelous Modren 3 Seater</h4>
-							</a>
-							
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">price</span>
-							<div class="price">&euro; 599,00</div>
-						</div>
-						<div class="col-12 col-md">
-							<label for="qty" class="mobile-order-head">quantity</label>
-							<select class="custom-select" id="qty">
-								 <option value="1" selected>1</option> 
-								 <option value="2">2</option>
-								 <option value="3">3</option>
-								 <option value="4">4</option>
-								 <option value="5">5</option>
-							</select>
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
-						</div>
-						
-						<div class="col-12 col-md-1">
-							<div class="delete">&#10005</div>
-						</div>
-					</div>
-
-					<div class="row order-item">
-						<div class="col-12 col-md-5 col-lg-6 product">
-							
-							<div class="thumbnail">
-								<a href="#">
-									<img src="https://placeimg.com/106/106/any" alt="product" class="img-fluid">
-								</a>
-							</div>
-							<a href="#">
-								<h4 class="product-name">Marvelous Modren 3 Seater</h4>
-							</a>
-							
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">price</span>
-							<div class="price">&euro; 599,00</div>
-						</div>
-						<div class="col-12 col-md">
-							<label for="qty" class="mobile-order-head">quantity</label>
-							<select class="custom-select" id="qty">
-								 <option value="1" selected>1</option> 
-								 <option value="2">2</option>
-								 <option value="3">3</option>
-								 <option value="4">4</option>
-								 <option value="5">5</option>
-							</select>
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
-						</div>
-						<div class="col-12 col-md-1">
-							<div class="delete">&#10005</div>
-						</div>
-					</div>
-
-					<div class="row order-item">
-						<div class="col-12 col-md-5 col-lg-6 product">
-							
-							<div class="thumbnail">
-								<a href="#">
-									<img src="https://placeimg.com/106/106/any" alt="product" class="img-fluid">
-								</a>
-							</div>
-							<a href="#">
-								<h4 class="product-name">Marvelous Modren 3 Seater</h4>
-							</a>
-							
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">price</span>
-							<div class="price">&euro; 599,00</div>
-						</div>
-						<div class="col-12 col-md">
-							<label for="qty" class="mobile-order-head">quantity</label>
-							<select class="custom-select" id="qty">
-								 <option value="1" selected>1</option> 
-								 <option value="2">2</option>
-								 <option value="3">3</option>
-								 <option value="4">4</option>
-								 <option value="5">5</option>
-							</select>
-						</div>
-						<div class="col-12 col-md">
-							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
-						</div>
-						<div class="col-12 col-md-1">
-							<div class="delete">&#10005</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="coupon">
-					<input type="text" class="form-control" placeholder="Your Coupon Code">
-					<button class="btn text-uppercase rounded-0">apply</button>
-				</div>
-
-				<hr>
-			</div>						
-		</div>
-
-		
-
-		<div class="shopping-info">
+		<div class="checkout">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg-6">
-						<h5 class="sh-title">calculate shopping</h5>
+					<div class="col-12 col-lg-6 bill-detail">
+						<h5 class="sh-title">billing details</h5>
+
 						<form>
 							<div class="form-group">
 							   <select class="custom-select custom">
@@ -318,52 +187,152 @@
 							   </select>
 							   <div class="dropdown-btn"><i class="icon-angle-down"></i></div>
 							 </div>
-							 <div class="form-group">
-							   <select class="custom-select custom">
-							   	 <option>State / Province</option>
-							     <option>Taipei</option>
-							     <option>Taoyuan </option>
-							     <option>Taichung</option>
-							     <option>Tainan </option>
-							     <option>Kaohsiung</option>							     
-							   </select>
-							   <div class="dropdown-btn"><i class="icon-angle-down"></i></div>
-							 </div>
-							 <div class="form-group">
-							   <select class="custom-select custom">
-								 <option>Zip / Postal Code</option>							   	
-							     <option>102211</option>
-							     <option>102211</option>
-							     <option>102211</option>
-							     <option>102211</option>
-							     <option>102211</option>							     
-							   </select>
-							   <div class="dropdown-btn"><i class="icon-angle-down"></i></div>
+
+							 <div class="form-row">
+							   <div class="form-group col-12 col-md-6">
+							     <input type="text" class="form-control" placeholder="Name">
+							   </div>
+							   <div class="form-group col-12 col-md-6">
+							     <input type="text" class="form-control" placeholder="Last Name">
+							   </div>
 							 </div>
 
-							 <button class="btn btn-secondary text-uppercase rounded-0 disabled">update total <i>i</i></button>
+							 <div class="form-group">
+							    <input type="text" class="form-control" placeholder="Company Name">
+							  </div>
+
+							  <div class="form-group">
+							     <textarea class="form-control" rows="3" placeholder="Address"></textarea>
+							   </div>
+
+							   <div class="form-group">
+							   	 <input type="text" class="form-control" placeholder="Town / City">
+							   </div>
+							   <div class="form-group">
+							   	 <input type="text" class="form-control" placeholder="State / Country">
+							   </div>
+							   <div class="form-group">
+							   	 <input type="text" class="form-control" placeholder="Postcode / Zip">
+							   </div>
+
+							   <div class="form-row">
+							   <div class="form-group col-12 col-md-6">
+							     <input type="text" class="form-control" placeholder="E-mail Address">
+							   </div>
+							   <div class="form-group col-12 col-md-6">
+							     <input type="text" class="form-control" placeholder="Phone Number">
+							   </div>
+							 </div>
+
+							 <div class="form-group">
+							    <div class="form-check">
+							      <input class="form-check-input" type="checkbox" id="addressCheck">
+							      <label class="form-check-label" for="addressCheck">
+							        Shipping to a different address?
+							      </label>
+							    </div>
+							  </div>
+
+							   <div class="form-group">
+							     <textarea class="form-control" rows="3" placeholder="Order Notes"></textarea>
+							   </div>
 						</form>
 					</div>
 
-					<div class="col-12 col-lg-6 charge clearfix">
-						<h5 class="sh-title">cart total</h5>
-						<div class="bordered">
-							<div class="charge-detail">
-								<div class="charge-item">cart subtitle</div>
-								<div class="charge">&euro; 1299,00</div>
-							</div>
-							<div class="charge-detail">
-								<div class="charge-item">shipping</div>
-								<div class="shipping-fee">Free shipping</div>
-							</div>
-							<div class="charge-detail">
-								<div class="charge-item">cart total</div>
-								<div class="total-charge">&euro; 1299,00</div>
-							</div>
+					<div class="col-12 col-lg-6 payment clearfix">
+						<div class="gray-bg">
 							
+							<div class="payment-detail">
+								<h5 class="sh-title">your order</h5>
+
+								<div class="payment-content">
+									<div class="order-head">
+										<div>product</div>
+										<div>totals</div>
+									</div>
+									<div class="product">
+										<div class="product-name">Marvelous Modern 3 Seater</div>
+										<div class="product-qty">x1</div>
+										<div class="price">&euro; 299,00</div>
+									</div>
+									<div class="product">
+										<div class="product-name">Bombi Chair</div>
+										<div class="product-qty">x1</div>
+										<div class="price">&euro; 532,00</div>
+									</div>
+								</div>
+								<div class="payment-content">
+									<div class="order-head">								
+										cart subtotal
+									</div>
+									<div class="subtotal">
+										&euro; 532,00
+									</div>
+								</div>
+								<div class="payment-content">
+									<div class="order-head">								
+										shipping
+									</div>
+									<div class="shipping-fee">
+										Free Shipping
+									</div>
+								</div>
+								<div class="payment-content">
+									<div class="order-head">								
+										order total
+									</div>
+									<div class="total">
+										&euro; 1299,00
+									</div>
+								</div>
+							</div>
+
+							<div class="payment-methods">
+								<h5 class="sh-title">payment methods</h5>
+
+								<div class="payment-content">
+									
+									
+									<div class="form-check">
+								   	 <label class="form-check-label text-uppercase" for="payment-method">
+								      direct bank transfer
+								     </label>
+								     <input class="form-check-input" type="checkbox" id="payment-method">		    
+								   </div>
+								   <p>
+								   	Make your payment directly into our bank account. Please use your order id as the payment reference. Your order wont be shippided until the funds have cleared in our account.
+								   </p>
+								</div>
+								<div class="payment-content">
+									
+									<div class="form-check">
+								   	 <label class="form-check-label text-uppercase" for="payment-method">
+								      cheque payment
+								     </label>
+								     <input class="form-check-input text-uppercase" type="checkbox" id="payment-method">		    
+								   </div>
+								</div>
+								<div class="payment-content">
+
+									<div class="form-check">
+								   	 <label class="form-check-label text-uppercase" for="payment-method">
+								      paypal
+								     </label>
+								     <input class="form-check-input" type="checkbox" id="payment-method">		    
+								   </div>
+								</div>
+					
+							</div>
 						</div>
 
-						<a href="order-checkout.html" class="btn btn-success checkout-btn text-uppercase rounded-0">
+						<div class="form-check check-trems">
+							<label class="form-check-label" for="accept">
+								  I've read &amp; accept the <a href="#" class="underline">terms &amp; conditions</a>
+							</label>
+							<input class="form-check-input" type="checkbox" id="accept">		    
+						</div>
+
+						<a href="#" class="btn btn-success checkout-btn text-uppercase rounded-0 ">
 							proceed to checkout <i>i</i>
 						</a>
 					</div>
@@ -371,6 +340,44 @@
 			</div>
 		</div>
 
+		<div class="advantage">
+			<div class="container">
+				<div class="row bordered">
+					<div class="col-12 col-md-6 col-lg-3 pros">
+						<i class="icon-flight"></i>
+						<div class="desc">
+							<h5>free shipping</h5>
+							<p>Free Shipping on all US Order</p>
+						</div>
+						
+					</div>
+					<div class="col-12  col-md-6 col-lg-3 pros">
+						<i class="icon-lifebuoy"></i>
+						<div class="desc">
+							<h5>support 24/7</h5>
+							<p>We support 24 hours a day</p>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 pros">
+						<i class="icon-dropbox"></i>
+						<div class="desc">
+							<h5>gift cards</h5>
+							<p>Give perfect gift</p>
+						</div>
+						
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 pros">
+						<i class=" icon-money"></i>
+						<div class="desc">
+							<h5>payment 100% secure</h5>
+							<p>Payment 100% secure</p>
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
 
 	</div>
 

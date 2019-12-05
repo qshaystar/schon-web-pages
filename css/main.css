@@ -1456,6 +1456,9 @@ p.month {
 }
 .order-head {
   display: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #747474;
 }
 .order-content {
   padding: 0 15px;
@@ -1554,19 +1557,21 @@ p.month {
   z-index: -1;
   color: #ced4da;
 }
+.custom-select.custom {
+  border-radius: 10px;
+  font-size: 14px;
+  height: 38px;
+  background-color: transparent;
+  background: none;
+}
+.custom-select.custom:focus {
+  background-color: transparent;
+}
 .shopping-info form {
   padding: 30px 0;
 }
 .shopping-info .form-group {
   position: relative;
-}
-.shopping-info .custom-select {
-  font-size: 14px;
-  background-color: transparent;
-  background: none;
-}
-.shopping-info .custom-select:focus {
-  background-color: transparent;
 }
 .shopping-info .btn {
   padding-left: 16px;
@@ -1641,9 +1646,6 @@ p.month {
     display: -ms-flexbox;
     display: flex;
     padding: 15px 0;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #747474;
   }
   .order-head .col {
     text-align: center;
@@ -1778,6 +1780,215 @@ p.month {
   }
   .charge .btn {
     float: right;
+  }
+}
+.full-height.img-bg {
+  background-image: url(../images/checkout-header.jpg);
+}
+.full-height.text-white .header-top,
+.full-height.text-white #breadcrumbs {
+  color: white;
+}
+.full-height.text-white .header-top a,
+.full-height.text-white #breadcrumbs a {
+  color: white;
+}
+#header.full-height.text-white a:hover {
+  color: #ccc;
+}
+.bill-detail form {
+  padding: 30px 0;
+}
+.bill-detail .form-control {
+  border-radius: 10px;
+}
+.bill-detail .form-group {
+  position: relative;
+}
+.bill-detail .custom {
+  color: #747474;
+  font-size: 12px;
+  height: 38px;
+}
+.bill-detail .form-check-label {
+  font-size: 14px;
+  color: #747474;
+}
+.bill-detail .form-check-input {
+  margin-top: 7px;
+}
+.payment .gray-bg {
+  padding: 20px 15px;
+}
+.payment .sh-title {
+  margin-bottom: 20px;
+}
+.payment .order-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.payment .payment-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.payment .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.payment .product-name,
+.payment .product-qty {
+  font-size: 14px;
+  font-weight: 600;
+  color: #747474;
+}
+.payment .product-qty {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 100%;
+}
+.payment .price,
+.payment .subtotal,
+.payment .shipping-fee,
+.payment .total {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.payment .price {
+  line-height: 30px;
+}
+.payment-content {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+.payment-content:nth-child(2) {
+  display: block;
+  border-top: none;
+}
+.payment-content:nth-child(2) .order-head {
+  padding-bottom: 10px;
+}
+.payment-detail {
+  padding-bottom: 30px;
+}
+.payment-methods .form-check {
+  padding: 0;
+  width: 100%;
+}
+.payment-methods .form-check-label {
+  font-weight: 600;
+  color: #747474;
+}
+.payment-methods .form-check-input {
+  right: 0;
+}
+.payment-methods p {
+  margin-top: 10px;
+  color: #747474;
+}
+.check-trems {
+  padding: 30px 15px;
+}
+.check-trems .form-check-label {
+  font-size: 14px;
+  color: #747474;
+}
+.check-trems .form-check-input {
+  right: 0;
+  margin-right: 15px;
+}
+.check-trems a:hover {
+  color: #3a3a3a;
+}
+@media (min-width: 768px) {
+  .bill-detail input[type="text"] {
+    height: 48px;
+  }
+  .bill-detail .custom {
+    height: 48px;
+  }
+  .bill-detail .dropdown-btn {
+    height: 48px;
+  }
+  .payment .gray-bg {
+    padding: 40px;
+  }
+  .payment .product {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .payment .order-head {
+    padding: 0;
+  }
+  .payment .product-qty {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    padding-left: 30px;
+    width: auto;
+    line-height: 2;
+  }
+  .payment .price {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .payment .subtotal,
+  .payment .shipping-fee,
+  .payment .total {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .payment .checkout-btn {
+    float: right;
+  }
+  .check-trems {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .check-trems .form-check-input {
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .checkout .row {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  .checkout .col-lg-6 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .advantage .bordered > div {
+    border-right: 1px solid #ccc;
+  }
+  .advantage .bordered > div:last-child {
+    border-right: none;
+  }
+  .advantage .pros {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 * {
@@ -2476,9 +2687,13 @@ h3.banner-title {
   font-weight: bold;
   color: white;
   background-color: #535353;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .subscribe-bar .button:focus {
   outline: 0;
+  background-color: #747474;
 }
 .bordered-ver {
   position: relative;
@@ -2487,6 +2702,10 @@ h3.banner-title {
   border: 1px solid #747474;
   border-radius: 30px;
   width: 100%;
+}
+.bordered-ver input:focus {
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.25);
 }
 .bordered-ver .button {
   position: absolute;
@@ -2520,7 +2739,7 @@ h3.banner-title {
 .copyright span {
   font-weight: bold;
 }
-.payment-methods {
+.payment-methods-img {
   display: inline-block;
 }
 .simple-footer .logo {
@@ -3129,7 +3348,7 @@ h3.banner-title {
   .copyright {
     float: left;
   }
-  .payment-methods {
+  .payment-methods-img {
     float: right;
   }
   .simple-footer .info-box:last-child {
@@ -3144,7 +3363,7 @@ h3.banner-title {
     justify-content: flex-end;
   }
   .simple-footer .copyright,
-  .simple-footer .payment-methods {
+  .simple-footer .payment-methods-img {
     float: none;
   }
 }
