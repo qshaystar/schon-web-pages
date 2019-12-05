@@ -23,6 +23,12 @@ $(document).ready(function(){
 			}
 		},
 
+		hideCart: function() {
+			if($('.cart-panel').length>0) {
+				$('.cart-panel').removeClass('show');
+			}
+		}
+
 	};
 
 
@@ -33,6 +39,7 @@ $(document).ready(function(){
 		e.stopPropagation();
 
 		init.hideNav();
+		init.hideCart();
 		
 
 		$('.account').toggleClass('show');
@@ -45,9 +52,19 @@ $(document).ready(function(){
 
 		init.hideDropdown();
 		init.hideAccount();
+		init.hideCart();
 		
 		$('.nav').toggleClass('show');
 
+	});
+
+	// cart toggle
+
+	$('#cart').click(function(e) {
+		init.hideNav();
+		init.hideAccount();
+		
+		$('.cart-panel').toggleClass('show');
 	});
 
 

@@ -189,19 +189,20 @@ hr {
 }
 
 .wide-header {
+	position: relative;
 
 	.contact-info, .icon-heart-empty, .blog-menu-toggle {
 		display: none;
 	}
 
-	#cart {
-		position: relative;
+	.nav {
+		top: 45px;
 	}
 
 	.qty {	
 	    position: absolute;
 	    bottom: 0;
-	    right: 0;
+	    right: 12px;
 	    border: 1px solid white;
 	    border-radius: 50%; 
 	    width: 16px;
@@ -211,6 +212,93 @@ hr {
 	    line-height: 16px;
 	    color: white;
 	    background: black;
+	}
+
+	.cart-panel {
+		top: 45px;
+	}
+
+	.triangle {
+		right: 20px;
+	}
+}
+
+// shopping cart page header
+
+#header.full-height {
+	.header-top {
+		a {
+			transition: color .3s;
+			&:hover {
+				color: @heavy-gray-title;
+			}
+		}
+	}
+}
+
+.full-height {
+
+	#breadcrumbs {
+		justify-content: flex-start;
+	}
+
+	.login {
+		display: flex;
+		justify-content: flex-end;
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.nav {
+		top: 30px;
+	}
+
+}
+
+.pull-right {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+}
+
+.content-header {
+	padding-top: 30px;
+}
+
+// checkout page header
+
+.full-height {
+
+	&.img-bg {
+		background-image: url(../images/checkout-header.jpg);
+	}
+
+	&.text-white {
+		.header-top, #breadcrumbs {
+			color: white;
+			a {
+				color: white;
+
+			}
+		}
+
+		.nav {
+			a {
+				color: #3a3a3a;
+			}
+		}
+
+
+	}
+}
+
+#header {
+
+	&.full-height.text-white {
+
+		a:hover {
+			color: #ccc;
+		}
 	}
 }
 
@@ -237,6 +325,110 @@ hr {
     	&:hover a {
     		color: @heavy-gray-title;
     	}
+	}
+}
+
+
+
+// cart
+
+.triangle {
+    	position: absolute;
+    	top: -12px;
+    	right: 48px;
+    	width: 0;
+    	height: 0;
+    	border-style: solid;
+    	border-width: 0 10px 12px 10px;
+    	border-color: transparent transparent #ffffff transparent;
+ }
+
+.cart-panel {
+	display: none;
+	position: absolute;
+	top: 61px;
+    left: 0;
+    right: 0;
+	z-index: 10;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 600;
+	color: @light-gray;
+    background-color: white;
+
+    .container {
+		padding: 30px 35px 40px 35px;
+	}
+
+    .row {
+    	margin-left: -5px;
+    	margin-right: -5px;
+    }
+    
+    .col-1, .col-3, .col-8 {
+    	padding-left: 5px;
+    	padding-right: 5px;
+    	align-self: center;
+    }
+
+    .cart-items {
+
+		li {
+			padding: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+    }
+
+
+}
+
+
+.item-name {
+	font-size: 15px;
+	color: @light-gray;
+}
+
+.remove {
+	font-size: 20px;
+	color: #f05c5c;
+	cursor: pointer;
+	transition: color .3s;
+
+		&:hover {
+			color: #d43535;
+		}
+}
+
+.cart-subtotal {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.btns-group {
+	display: flex;
+	justify-content: space-between;
+
+	.btn {
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 15px;
+		font-weight: 600;
+	} 
+}
+
+#header {
+
+	a.btn {
+		transition: color .3s;
+		&:hover {
+			color: white;
+		}
 	}
 }
 
@@ -977,7 +1169,47 @@ h3 {
 
 @media (min-width: 768px) {
 
-	
+	// cart
+
+	.triangle {
+		right: 5px;
+	}
+
+	.wide-header {
+
+		.qty {
+			right: 0;
+		}
+
+		.triangle {
+			right: 5px;
+		}
+	}
+
+	.full-height {
+
+		.wide-header {
+			position: static;
+		}
+
+		.nav {
+			top: 93px;
+		}
+	}
+
+
+	#cart {
+		position: relative;
+	}
+
+	.cart-panel {
+		top: 40px;
+    	right: 0;
+    	left: auto;
+		width: 400px;
+		line-height: 25px;
+	}
+
 
 	.header {
 		.row {
@@ -1321,6 +1553,63 @@ h3 {
 			    border-radius: 50%;
 			}
 		}
+	}
+
+	// shopping cart page header
+
+	.full-height {
+		position: relative;
+
+		.header-top {
+			display: flex;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		.login {
+			padding-bottom: 0;
+			font-size: 14px;
+
+			li {
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+
+		.header-bottom {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background-color: white;
+		}
+
+		.pull-right {
+			padding: 0;
+			background: transparent;
+		}
+
+		.white-space {
+			position: absolute;
+		    top: 42px;
+		    left: 50%;
+		    right: 0;
+		    bottom: 150px;	   
+		    background: white;
+
+		}
+
+		.nav-side {
+			z-index: 2;
+		}
+
+		.content-header {
+			padding-top: 60px;
+		}
+
+	}
+
+	.triangle {
+		right: 100px;
 	}
 
 	.subscribe-bar {

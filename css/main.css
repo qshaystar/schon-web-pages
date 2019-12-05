@@ -1385,40 +1385,6 @@ p.month {
     border: 1px solid #ccc;
   }
 }
-#header.full-height .header-top a {
-  -webkit-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s;
-}
-#header.full-height .header-top a:hover {
-  color: #3a3a3a;
-}
-.full-height #breadcrumbs {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-.full-height .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding-bottom: 10px;
-  font-size: 12px;
-}
-.full-height .nav {
-  top: 93px;
-}
-.pull-right {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-}
-.content-header {
-  padding-top: 30px;
-}
 .steps {
   color: #bbb;
 }
@@ -1529,6 +1495,13 @@ p.month {
   position: absolute;
   right: 10px;
   color: #f05c5c;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.order-item .delete:hover {
+  color: #d43535;
 }
 .coupon {
   padding: 20px;
@@ -1697,46 +1670,6 @@ p.month {
   }
 }
 @media (min-width: 1024px) {
-  .full-height {
-    position: relative;
-  }
-  .full-height .header-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .full-height .login {
-    padding-bottom: 0;
-    font-size: 14px;
-  }
-  .full-height .login li:hover {
-    background-color: transparent;
-  }
-  .full-height .header-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: white;
-  }
-  .full-height .pull-right {
-    padding: 0;
-    background: transparent;
-  }
-  .full-height .white-space {
-    position: absolute;
-    top: 42px;
-    left: 50%;
-    right: 0;
-    bottom: 150px;
-    background: white;
-  }
-  .full-height .nav-side {
-    z-index: 2;
-  }
-  .full-height .content-header {
-    padding-top: 60px;
-  }
   .order-item .product {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -1756,6 +1689,14 @@ p.month {
   }
   .coupon input {
     width: 20%;
+  }
+  .coupon .btn {
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+  }
+  .coupon .btn:hover {
+    background-color: #deb546;
   }
   .form-group .dropdown-btn {
     height: 48px;
@@ -1781,20 +1722,15 @@ p.month {
   .charge .btn {
     float: right;
   }
-}
-.full-height.img-bg {
-  background-image: url(../images/checkout-header.jpg);
-}
-.full-height.text-white .header-top,
-.full-height.text-white #breadcrumbs {
-  color: white;
-}
-.full-height.text-white .header-top a,
-.full-height.text-white #breadcrumbs a {
-  color: white;
-}
-#header.full-height.text-white a:hover {
-  color: #ccc;
+  .checkout-btn {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .checkout-btn:hover {
+    border-color: #9ad47e;
+    background-color: #9ad47e;
+  }
 }
 .bill-detail form {
   padding: 30px 0;
@@ -2152,18 +2088,21 @@ hr {
 .cart-sum {
   display: none;
 }
+.wide-header {
+  position: relative;
+}
 .wide-header .contact-info,
 .wide-header .icon-heart-empty,
 .wide-header .blog-menu-toggle {
   display: none;
 }
-.wide-header #cart {
-  position: relative;
+.wide-header .nav {
+  top: 45px;
 }
 .wide-header .qty {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 12px;
   border: 1px solid white;
   border-radius: 50%;
   width: 16px;
@@ -2173,6 +2112,63 @@ hr {
   line-height: 16px;
   color: white;
   background: black;
+}
+.wide-header .cart-panel {
+  top: 45px;
+}
+.wide-header .triangle {
+  right: 20px;
+}
+#header.full-height .header-top a {
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#header.full-height .header-top a:hover {
+  color: #3a3a3a;
+}
+.full-height #breadcrumbs {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.full-height .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.full-height .nav {
+  top: 30px;
+}
+.pull-right {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+.content-header {
+  padding-top: 30px;
+}
+.full-height.img-bg {
+  background-image: url(../images/checkout-header.jpg);
+}
+.full-height.text-white .header-top,
+.full-height.text-white #breadcrumbs {
+  color: white;
+}
+.full-height.text-white .header-top a,
+.full-height.text-white #breadcrumbs a {
+  color: white;
+}
+.full-height.text-white .nav a {
+  color: #3a3a3a;
+}
+#header.full-height.text-white a:hover {
+  color: #ccc;
 }
 .custom-dropdown-toggle {
   position: relative;
@@ -2187,6 +2183,100 @@ hr {
 }
 .custom-dropdown-menu li:hover a {
   color: #3a3a3a;
+}
+.triangle {
+  position: absolute;
+  top: -12px;
+  right: 48px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 12px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.cart-panel {
+  display: none;
+  position: absolute;
+  top: 61px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #747474;
+  background-color: white;
+}
+.cart-panel .container {
+  padding: 30px 35px 40px 35px;
+}
+.cart-panel .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.cart-panel .col-1,
+.cart-panel .col-3,
+.cart-panel .col-8 {
+  padding-left: 5px;
+  padding-right: 5px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.cart-panel .cart-items li {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.item-name {
+  font-size: 15px;
+  color: #747474;
+}
+.remove {
+  font-size: 20px;
+  color: #f05c5c;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.remove:hover {
+  color: #d43535;
+}
+.cart-subtotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.btns-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.btns-group .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#header a.btn {
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#header a.btn:hover {
+  color: white;
 }
 #content > div {
   padding-top: 50px;
@@ -2759,6 +2849,31 @@ h3.banner-title {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
+  .triangle {
+    right: 5px;
+  }
+  .wide-header .qty {
+    right: 0;
+  }
+  .wide-header .triangle {
+    right: 5px;
+  }
+  .full-height .wide-header {
+    position: static;
+  }
+  .full-height .nav {
+    top: 93px;
+  }
+  #cart {
+    position: relative;
+  }
+  .cart-panel {
+    top: 40px;
+    right: 0;
+    left: auto;
+    width: 400px;
+    line-height: 25px;
+  }
   .header .row {
     margin-left: -5px;
     margin-right: -5px;
@@ -3034,6 +3149,49 @@ h3.banner-title {
     width: 25px;
     height: 25px;
     border-radius: 50%;
+  }
+  .full-height {
+    position: relative;
+  }
+  .full-height .header-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .full-height .login {
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+  .full-height .login li:hover {
+    background-color: transparent;
+  }
+  .full-height .header-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+  .full-height .pull-right {
+    padding: 0;
+    background: transparent;
+  }
+  .full-height .white-space {
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    right: 0;
+    bottom: 150px;
+    background: white;
+  }
+  .full-height .nav-side {
+    z-index: 2;
+  }
+  .full-height .content-header {
+    padding-top: 60px;
+  }
+  .triangle {
+    right: 100px;
   }
   .subscribe-bar .button {
     padding: 10px 9px;
