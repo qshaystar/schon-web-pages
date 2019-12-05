@@ -61,10 +61,17 @@ $(document).ready(function(){
 	// cart toggle
 
 	$('#cart').click(function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+
 		init.hideNav();
 		init.hideAccount();
-		
+
 		$('.cart-panel').toggleClass('show');
+	});
+
+	$('#cart .btn').click(function(e) {
+		e.stopPropagation();
 	});
 
 
