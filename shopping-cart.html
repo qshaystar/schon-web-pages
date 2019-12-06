@@ -7,8 +7,6 @@
 	<title>Order Shopping Cart</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="slick/slick.css">
-	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fontello.css">
 
@@ -114,9 +112,12 @@
 								<div class="cart-panel shadow-lg">
 									<div class="triangle"></div>
 									<div class="container">
+										<div class="empty-cart">
+											You have no items in your shopping cart. 
+										</div>
 										
-										<ul class="cart-items">
-											<li class="row cart-item" data-price="599" data-qty="1">
+										<ul class="cart-items cart-active">
+											<li class="row cart-item" data-price="599.00" data-qty="1">
 												<div class="col-3">
 													<div class="cart-thumbnail">
 														<a href="#">
@@ -137,7 +138,7 @@
 													<div class="remove"><i class="icon-cancel"></i></div>
 												</div>
 											</li>
-											<li class="row cart-item" data-price="599" data-qty="1">
+											<li class="row cart-item" data-price="599.00" data-qty="1">
 												<div class="col-3">
 													<div class="cart-thumbnail">
 														<a href="#">
@@ -158,7 +159,7 @@
 													<div class="remove"><i class="icon-cancel"></i></div>
 												</div>
 											</li>
-											<li class="row cart-item" data-price="599" data-qty="1">
+											<li class="row cart-item" data-price="599.00" data-qty="1">
 												<div class="col-3">
 													<div class="cart-thumbnail">
 														<a href="#">
@@ -181,12 +182,12 @@
 											</li>
 											
 										</ul>
-										<div class="cart-subtotal">
+										<div class="cart-subtotal cart-active">
 											<div>Sub Total</div>
-											<div class="text-dark">&euro; <span class="cart-total">799,00</span></div>
+											<div class="text-dark">&euro; <span class="cart-total">1797,00</span></div>
 										</div>
 
-										<div class="btns-group">
+										<div class="btns-group cart-active">
 											<a href="shopping-cart.html" class="btn btn-outline-dark rounded-pill text-uppercase">view cart</a>
 											<a href="order-checkout.html" class="btn btn-outline-dark rounded-pill text-uppercase">checkout</a>
 										</div>

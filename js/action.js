@@ -85,6 +85,8 @@ $(document).ready(function(){
 	});
 
 
+
+
 	// marked menu
 
 	$('.shopping-bag').click(function(e) {
@@ -102,6 +104,7 @@ $(document).ready(function(){
 	$('.compare').click(function(e) {
 		$(this).children('i').toggleClass('icon-red');
 	});
+
 
 	// mobile product slide menu
 

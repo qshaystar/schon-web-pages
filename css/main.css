@@ -2008,6 +2008,9 @@ hr {
 .show {
   display: block !important;
 }
+.hide {
+  display: none !important;
+}
 #header {
   padding: 16px 0;
 }
@@ -2276,6 +2279,32 @@ hr {
 }
 #header a.btn:hover {
   color: white;
+}
+.empty-cart {
+  display: none;
+  text-align: center;
+  font-size: 16px;
+}
+.addToCart-msg {
+  display: none;
+  position: fixed;
+  background-color: #fdfdfd;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  z-index: 10;
+  border-radius: 15px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.addToCart-msg p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #747474;
 }
 #content > div {
   padding-top: 50px;
@@ -2831,6 +2860,9 @@ h3.banner-title {
 .payment-methods-img {
   display: inline-block;
 }
+.simple-footer h6 {
+  text-transform: uppercase;
+}
 .simple-footer .logo {
   -webkit-filter: brightness(0);
   filter: brightness(0);
@@ -2872,6 +2904,12 @@ h3.banner-title {
     left: auto;
     width: 400px;
     line-height: 25px;
+  }
+  .addToCart-msg {
+    width: 500px;
+  }
+  .addToCart-msg p {
+    line-height: 80px;
   }
   .header .row {
     margin-left: -5px;
