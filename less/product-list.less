@@ -265,9 +265,14 @@
 }
 
 .mode {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	padding-top: 15px;
+
+	.btn {
+		font-size: 14px;
+	}
 
 	li {
 		margin-right: 5px;
@@ -285,6 +290,35 @@
     	&.btn {
     		padding: 0;
     	}
+	}
+
+
+	.sort-options {
+		display: none;
+		position: absolute;
+		top: 53px;
+		border-radius: 20px;
+		overflow: hidden;
+	    z-index: 5;
+	    background-color: white;
+
+	    .btn {
+	    	 color: #6c757d;
+
+	    	 &:focus {
+	    	 	box-shadow: none;
+	    	 }
+	    }
+
+	    li {
+	    	margin-right: 0;
+	    	transition: background-color .3s;
+
+	    	&:hover {
+	    		background-color: #eee;
+	    	}
+	    }
+	   
 	}
 }
 
@@ -304,6 +338,28 @@
 	}
 }
 
+
+
+.list-arr {
+	display: flex;
+	
+
+	.desc {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+
+		.stars {
+			order: 1;
+		}
+
+		.price {
+			order: 2;
+		}
+	}
+}
 
 // tablet
 

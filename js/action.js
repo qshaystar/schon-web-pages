@@ -133,6 +133,22 @@ $(document).ready(function(){
 	});
 
 
+	// product list arrangement
+
+	$('.list-arrange').click(function(e) {
+		$('.product').removeClass('col-md-6 col-lg-4').addClass('list-arr');
+	});
+
+	$('.grid-arrange').click(function(e) {
+		$('.product').removeClass('list-arr').addClass('col-md-6 col-lg-4');
+	
+	});
+
+	// sort btn dropdown
+
+	$('.sort-btn').click(function(e) {
+		$('.sort-options').slideToggle();
+	});
 
 	// product detail tabs
 

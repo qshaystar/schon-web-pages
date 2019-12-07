@@ -978,6 +978,7 @@ p.month {
   color: #747474;
 }
 .mode {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -985,6 +986,9 @@ p.month {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 15px;
+}
+.mode .btn {
+  font-size: 14px;
 }
 .mode li {
   margin-right: 5px;
@@ -1000,6 +1004,31 @@ p.month {
 .mode .rounded-circle.btn {
   padding: 0;
 }
+.mode .sort-options {
+  display: none;
+  position: absolute;
+  top: 53px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 5;
+  background-color: white;
+}
+.mode .sort-options .btn {
+  color: #6c757d;
+}
+.mode .sort-options .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.mode .sort-options li {
+  margin-right: 0;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.mode .sort-options li:hover {
+  background-color: #eee;
+}
 .pagination {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1014,6 +1043,35 @@ p.month {
   font-weight: 600;
   color: #747474;
   background-color: #f8f8f8;
+}
+.list-arr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.list-arr .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+.list-arr .desc .stars {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+.list-arr .desc .price {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
 }
 @media (min-width: 768px) {
   .slide-menu.width {
