@@ -61,7 +61,7 @@
 						  	</ul>
 						  </div>
 
-						  <a class="nav-link" href="#">About</a>
+						  <a class="nav-link" href="about.html">About</a>
 
 						   <div class="custom-dropdown-toggle">
 						  	<a class="nav-link dropdown">Blog</a>
@@ -151,7 +151,8 @@
 													<a href="#">
 														<div class="item-name text-capitalize"> Marvelous Modern 3 Seater</div>
 													</a>
-													<div class="text-dark">&euro; <span class="item-price">599,00</span></div>
+													<div class="text-dark">&euro; 
+														<span class="item-price">599,00</span></div>
 													<div>Qty: <span class="item-qty">1</span></div>
 												</div>
 
@@ -184,7 +185,8 @@
 										</ul>
 										<div class="cart-subtotal cart-active">
 											<div>Sub Total</div>
-											<div class="text-dark">&euro; <span class="cart-total">1797,00</span></div>
+											<div class="text-dark">
+												&euro; <span class="cart-total">1797,00</span></div>
 										</div>
 
 										<div class="btns-group cart-active">
@@ -264,8 +266,13 @@
 					<div class="col-1"></div>
 				</div>
 
-				<div class="order-content">
-					<div class="row order-item">
+				<div class="empty-cart">
+					You have no items in your shopping cart. 
+				</div>
+
+				<ul class="order-content">
+
+					<li class="row order-item" data-price="599.00" data-qty="1" data-total="599.00">
 						<div class="col-12 col-md-5 col-lg-6 product">
 							
 							<div class="thumbnail">
@@ -294,15 +301,15 @@
 						</div>
 						<div class="col-12 col-md">
 							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
+							<div class="total-price">&euro;  <span>599,00</span></div>
 						</div>
 						
 						<div class="col-12 col-md-1">
 							<div class="delete"><i class="icon-cancel"></i></div>
 						</div>
-					</div>
+					</li>
 
-					<div class="row order-item">
+					<li class="row order-item" data-price="599.00" data-qty="1" data-total="599.00">
 						<div class="col-12 col-md-5 col-lg-6 product">
 							
 							<div class="thumbnail">
@@ -331,14 +338,14 @@
 						</div>
 						<div class="col-12 col-md">
 							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
+							<div class="total-price">&euro; <span>599,00</span></div>
 						</div>
 						<div class="col-12 col-md-1">
 							<div class="delete"><i class="icon-cancel"></i></div>
 						</div>
-					</div>
+					</li>
 
-					<div class="row order-item">
+					<li class="row order-item" data-price="599.00" data-qty="1" data-total="599.00">
 						<div class="col-12 col-md-5 col-lg-6 product">
 							
 							<div class="thumbnail">
@@ -367,13 +374,13 @@
 						</div>
 						<div class="col-12 col-md">
 							<span class="mobile-order-head">total</span>
-							<div class="total-price">&euro; 599,00</div>
+							<div class="total-price">&euro;  <span>599,00</span></div>
 						</div>
 						<div class="col-12 col-md-1">
 							<div class="delete"><i class="icon-cancel"></i></div>
 						</div>
-					</div>
-				</div>
+					</li>
+				</ul>
 				
 				<div class="coupon">
 					<input type="text" class="form-control" placeholder="Your Coupon Code">
@@ -437,7 +444,7 @@
 						<div class="bordered">
 							<div class="charge-detail">
 								<div class="charge-item">cart subtitle</div>
-								<div class="charge">&euro; 1299,00</div>
+								<div class="charge">&euro; <span>1797,00</span></div>
 							</div>
 							<div class="charge-detail">
 								<div class="charge-item">shipping</div>
@@ -445,7 +452,7 @@
 							</div>
 							<div class="charge-detail">
 								<div class="charge-item">cart total</div>
-								<div class="total-charge">&euro; 1299,00</div>
+								<div class="total-charge">&euro; <span>1797,00</span></div>
 							</div>
 							
 						</div>

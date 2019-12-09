@@ -20,9 +20,8 @@ $(document).ready(function(){
 
 				total = price + total;
 				result = total.toFixed(2).replace('.',',');
-
+				
 			}).closest('#cart').find('.cart-total').text(result);
-
 			
 		},
 
@@ -67,6 +66,7 @@ $(document).ready(function(){
 	var itemTemplate = Handlebars.compile(source);
 
 	$('.shopping-bag').click(function(e) {
+		
 		panel.showMessage();
 		panel.removeEmptyCart();
 
@@ -120,8 +120,10 @@ $(document).ready(function(){
 	// cart-delete
 
 	$('.cart-items').on('click', '.remove', function(e) {
+
 		e.stopPropagation();
 		$(this).closest('.cart-item').remove();
+
 
 		panel.totalAmount();
 		panel.totalQty();

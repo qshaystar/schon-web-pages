@@ -181,5 +181,61 @@ $(document).ready(function(){
 	});
 
 
-            
+	// shopping cart delete
+
+	var cartPage = {
+		empty: function() {
+			if($('.order-item').length == 0) {
+				$('.empty-cart').addClass('show');
+				$('.order-head').addClass('hide');
+
+				$('.charge-detail .charge span').text(0);
+		 		$('.charge-detail .total-charge span').text(0);
+			}
+		},
+
+		subtotal: function() {
+			var subtotal = 0;
+
+			
+				$('.order-content').find('li').each(function() {
+
+					var totalPrice = +$(this).find('.total-price span').text().replace(',', '.');
+					
+					
+					subtotal = totalPrice + subtotal;
+					result = subtotal.toFixed(2).replace('.', ',');
+					
+				});
+
+
+			$('.charge-detail .charge span').text(result);
+		 	$('.charge-detail .total-charge span').text(result);
+		}
+	}
+
+
+	$('.delete').click(function(e) {
+
+		$(this).closest('li').remove();
+
+		cartPage.subtotal();
+		cartPage.empty();
+	});
+
+	$('.order-item #qty').blur(function(e) {
+		var qty = $(this).val();
+		var price = $(this).closest('.order-item').data('price');
+
+		total = qty * price;
+		result = total.toFixed(2).replace('.', ',');
+
+		$(this).closest('.order-item').attr('data-qty', qty).attr('data-total', total);
+
+		$(this).closest('.order-item').find('.total-price span').text(result);
+
+		cartPage.subtotal();
+	});
+
+         
 });
