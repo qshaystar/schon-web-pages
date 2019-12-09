@@ -186,7 +186,7 @@ $(document).ready(function(){
 	var cartPage = {
 		empty: function() {
 			if($('.order-item').length == 0) {
-				$('.empty-cart').addClass('show');
+				$('.order-detail .empty-cart').addClass('show');
 				$('.order-head').addClass('hide');
 
 				$('.charge-detail .charge span').text(0);
