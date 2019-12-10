@@ -11,7 +11,9 @@
 	<link rel="stylesheet" href="css/fontello.css">
 
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
 	<script src="js/action.js"></script>
+	<script src="js/cart.js"></script>
 </head>
 <body>
 
@@ -46,37 +48,157 @@
 					<div id="nav-bar">
 
 						<nav class="nav text-uppercase">
-						  <a class="nav-link" href="index.html">Home</a>
+						  	<a class="nav-link" href="index.html">Home</a>
+							<div class="custom-dropdown-toggle">
+							  	<a class="nav-link dropdown">Products</a>
 
-						  <div class="custom-dropdown-toggle">
-						  	<a class="nav-link dropdown">Products</a>
+							  	<div class="custom-dropdown-menu nav-img-bg">
+									<div class="triangle"></div>
+							  		<div class="container">
+							  			<div class="row">
+							  				<div class="col-12 col-lg">
+							  					<span class="decoration">
+							  						<h4 class="category-title">sofas &amp; armchairs</h4>
+							  						<hr>
+							  					</span>
 
-						  	<ul class="custom-dropdown-menu">
-						  		<li>
-						  			<a href="product-list.html">product list</a>
-						  		</li>
-						  		<li>
-						  			<a href="product-detail.html">product detail</a>
-						  		</li>	
-						  	</ul>
-						  </div>
+							  					<ul class="product-nav-links">
+							  						<li>
+							  							<a href="product-list.html">sofas</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">armchairs</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">poufs</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">footstools</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">loungs chairs</a>
+							  						</li>
+							  					</ul>
+							  					
+							  				</div>
 
-						  <a class="nav-link" href="#">About</a>
+							  				<div class="col-12 col-lg">
+							  					<span class="decoration">
+							  						<h4 class="category-title">tables &amp; chairs</h4>
+							  						<hr>
+							  					</span>
 
-						   <div class="custom-dropdown-toggle">
-						  	<a class="nav-link dropdown">Blog</a>
+							  					<ul class="product-nav-links">
+							  						<li>
+							  							<a href="product-list.html">chairs</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">stools</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">benches</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">coffe tables</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">console tables</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">cecretary desks</a>
+							  						</li>
+							  					</ul>
+							  					
+							  				</div>
+							  				<div class="col-12 col-lg">
+							  					<span class="decoration">
+							  						<h4 class="category-title">kitchen furniture</h4>
+							  						<hr>
+							  					</span>
 
-						  	<ul class="custom-dropdown-menu">
-						  		<li>
-						  			<a href="blog-list-sidebar.html">blog list sidebar</a>
-						  		</li>
-						  		<li>
-						  			<a href="blog-detail.html">blog detail full width</a>
-						  		</li>	
-						  	</ul>
-						  </div>
+							  					<ul class="product-nav-links">
+							  						<li>
+							  							<a href="product-list.html">kitchen taps</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">breakfast time</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">cooking</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">food storage boxes</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">spice jars</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">napskins</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">oven gloves</a>
+							  						</li>
+							  					</ul>
+							  					
+							  				</div>
+							  				<div class="col-12 col-lg">
+							  					<span class="decoration">
+							  						<h4 class="category-title">office</h4>
+							  						<hr>
+							  					</span>
 
-						  <a class="nav-link" href="contact.html">Contact</a>
+							  					<ul class="product-nav-links">
+							  						<li>
+							  							<a href="product-list.html">office desks</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">meeting tables</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">task chairs</a>
+							  						</li>
+							  					</ul>
+							  					
+							  				</div>
+							  				<div class="col-12 col-lg">
+							  					<span class="decoration">
+							  						<h4 class="category-title">lighting</h4>
+							  						<hr>
+							  					</span>
+
+							  					<ul class="product-nav-links">
+							  						<li>
+							  							<a href="product-list.html">floor lamps</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">wall lamps</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">ceiling lamps</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">table lamps</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">spotlights</a>
+							  						</li>
+							  						<li>
+							  							<a href="product-list.html">light letters</a>
+							  						</li>
+							  					</ul>
+							  					
+							  				</div>
+							  			</div>
+							  		</div>
+							  			
+							  	</div>
+							</div>
+
+						  	<a class="nav-link" href="about.html">About</a>
+
+						    <a class="nav-link" href="blog-list-sidebar.html">Blog</a>
+
+						  	<a class="nav-link" href="contact.html">Contact</a>
 						  
 						</nav>
 
@@ -579,6 +701,30 @@
 				</div>
 			</div>
 		</div>
+
+		<script id="cart-template" type="text/x-handlebars-template">
+			<li class="row cart-item" data-price="{{itemPriceData}}" data-qty="{{itemQty}}">
+				<div class="col-3">
+					<div class="cart-thumbnail">
+						<a href="#">
+							<img src="{{itemImg}}" alt="product" class="img-fluid">	
+						</a>
+												
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="#">
+						<div class="item-name text-capitalize">{{itemName}}</div>
+					</a>
+					<div class="text-dark">&euro; <span class="item-price">{{itemPrice}}</span></div>
+					<div>Qty: <span class="item-qty">{{itemQty}}</span></div>
+				</div>
+
+				<div class="col-1">
+					<div class="remove"><i class="icon-cancel"></i></div>
+				</div>
+			</li>
+		</script>
 
 
 </body>

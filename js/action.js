@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 	$('.custom-dropdown-toggle').click(function(e) {
 	
-		$(this).find('.custom-dropdown-menu').slideToggle("slow");
+		$(this).find('.custom-dropdown-menu').toggleClass('show');
 		
 	});
 

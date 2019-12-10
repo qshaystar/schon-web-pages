@@ -40,7 +40,7 @@ $(document).ready(function(){
 		emptyCart: function() {
 			if($('.cart-item').length == 0) {
 				$('.cart-active').addClass('hide');
-				$('.empty-cart').addClass('show');
+				$('.cart-panel .empty-cart').addClass('show');
 
 				$('#cart').find('.qty').text('0');
 				$('#cart').find('.cart-total').text('0');
@@ -50,7 +50,7 @@ $(document).ready(function(){
 		removeEmptyCart: function() {
 			if($('.cart-item').length == 0) {
 				$('.cart-active').removeClass('hide');
-				$('.empty-cart').removeClass('show');
+				$('.cart-panel .empty-cart').removeClass('show');
 			}
 		},
 
