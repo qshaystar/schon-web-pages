@@ -2072,6 +2072,9 @@ hr {
 .hide {
   display: none !important;
 }
+.scroll-lock {
+  overflow: hidden;
+}
 #header {
   padding: 16px 0;
 }
@@ -2203,7 +2206,10 @@ hr {
   font-size: 12px;
 }
 .full-height .nav {
-  top: 30px;
+  top: 39px;
+}
+.full-height .search-panel {
+  top: 93px;
 }
 .pull-right {
   padding-top: 10px;
@@ -2273,6 +2279,68 @@ hr {
   text-transform: capitalize;
   color: #747474;
 }
+.search-panel {
+  display: none;
+  position: fixed;
+  top: 61px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  z-index: 5;
+  text-align: center;
+}
+.search-panel .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.search-panel .search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search-panel .form-control {
+  border: none;
+  border-left: 1.5px solid #ccc;
+  border-radius: 0;
+  background: #f6f6f6;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.search-panel .form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.search-panel .btns-group {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.search-panel .btns-group .btn {
+  padding: 0;
+  color: #747474;
+}
+.search-panel .btns-group .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #535353;
+}
+.search-panel .panel-close {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 5;
+  color: #747474;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.search-panel .panel-close:hover {
+  color: #535353;
+}
 .triangle {
   position: absolute;
   top: -12px;
@@ -2286,7 +2354,7 @@ hr {
 .cart-panel {
   display: none;
   position: absolute;
-  top: 61px;
+  top: 45px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -2983,6 +3051,10 @@ h3.banner-title {
   .full-height .nav {
     top: 93px;
   }
+  .search-panel .search-area {
+    margin: 0 auto;
+    width: 50%;
+  }
   #cart {
     position: relative;
   }
@@ -3314,6 +3386,9 @@ h3.banner-title {
   .custom-dropdown-menu a {
     padding: 0 1rem;
   }
+  .search-panel {
+    top: 154px;
+  }
   .wide-header .logo {
     float: left;
   }
@@ -3333,6 +3408,9 @@ h3.banner-title {
   }
   .wide-header .custom-dropdown-menu .triangle {
     left: 486px;
+  }
+  .wide-header .search-panel {
+    top: 110px;
   }
   .full-height {
     position: relative;
@@ -3365,7 +3443,7 @@ h3.banner-title {
     top: 42px;
     left: 50%;
     right: 0;
-    bottom: 150px;
+    height: 89px;
     background: white;
   }
   .full-height .nav-side {
@@ -3388,6 +3466,9 @@ h3.banner-title {
   }
   .full-height .custom-dropdown-menu .triangle {
     left: 450px;
+  }
+  .full-height .search-panel {
+    top: 131px;
   }
   .triangle {
     right: 100px;

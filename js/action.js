@@ -79,12 +79,32 @@ $(document).ready(function(){
 	// dropdown menu
 
 	$('.custom-dropdown-toggle').click(function(e) {
-	
+		
 		$(this).find('.custom-dropdown-menu').toggleClass('show');
 		
 	});
 
 
+	// search panel
+
+	$('.search-toggle a').click(function(e) {
+		e.preventDefault();
+
+		$('.search-panel').fadeToggle().find('.form-control').focus();
+		$('body').toggleClass('scroll-lock');
+	});
+
+	
+
+	// search panel-close
+
+	$('.panel-close').click(function(e) {
+		e.stopPropagation();
+
+		$('.search-panel').fadeOut();
+		$('body').removeClass('scroll-lock');
+		
+	});
 
 
 	// marked menu

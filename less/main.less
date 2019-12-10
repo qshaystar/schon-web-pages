@@ -112,6 +112,10 @@ hr {
 	display: none !important;
 }
 
+.scroll-lock {
+	overflow: hidden;
+}
+
 
 // mobile
 
@@ -174,6 +178,10 @@ hr {
     }
 }
 
+// .nav {
+// 	top: 45px;
+// }
+
 .nav-side {
 	display: flex;
 	font-size: 20px;
@@ -225,6 +233,7 @@ hr {
 	.triangle {
 		right: 20px;
 	}
+
 }
 
 // shopping cart page header
@@ -254,7 +263,11 @@ hr {
 	}
 
 	.nav {
-		top: 30px;
+		top: 39px;
+	}
+
+	.search-panel {
+		top: 93px;
 	}
 
 }
@@ -302,6 +315,7 @@ hr {
 
 
 	}
+
 }
 
 #header {
@@ -377,7 +391,69 @@ hr {
 	}
 }
 
+.search-panel {
+	display: none;
+	position: fixed;
+	top: 61px;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    z-index: 5;
+    text-align: center; 
 
+    .container {
+    	position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+    }
+   
+
+   .search-area {
+   		display: flex;
+   }
+
+   .form-control {
+	   	border: none;
+	    border-left: 1.5px solid #ccc;
+	    border-radius: 0;
+	    background: #f6f6f6;
+	    transition: .3s;
+		
+		&:focus {
+			box-shadow: none;
+
+		}
+   }
+
+   .btns-group {
+   		justify-content: flex-end;
+
+   		.btn {
+   			padding: 0;
+   			color: @light-gray;
+
+   			&:focus {
+				box-shadow: none;
+				color: @md-gray-title;
+			}
+   		}
+		
+
+   }
+
+   .panel-close {
+   		display: inline-block;
+	    cursor: pointer;
+	    line-height: 5;
+	    color: @light-gray;
+	    transition: color .3s;
+
+	    &:hover {
+	    	color: @md-gray-title;
+	    }
+   }
+}
 
 
 
@@ -397,7 +473,7 @@ hr {
 .cart-panel {
 	display: none;
 	position: absolute;
-	top: 61px;
+	top: 45px;
     left: 0;
     right: 0;
 	z-index: 10;
@@ -1253,6 +1329,7 @@ h3 {
 
 	// cart
 
+
 	.triangle {
 		right: 5px;
 	}
@@ -1276,6 +1353,14 @@ h3 {
 
 		.nav {
 			top: 93px;
+		}
+	}
+
+	.search-panel {
+
+		.search-area {
+			margin: 0 auto;
+			width: 50%;
 		}
 	}
 
@@ -1552,6 +1637,7 @@ h3 {
 	}
 
 	.header-bottom {
+		
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
@@ -1691,6 +1777,10 @@ h3 {
     	}
 	}
 
+	.search-panel {
+		top: 154px;
+
+	}
 
 	.wide-header {
 
@@ -1717,6 +1807,10 @@ h3 {
 			.triangle {
 				left: 486px;
 			}
+		}
+
+		.search-panel {
+			top: 110px;
 		}
 
 	}
@@ -1759,7 +1853,7 @@ h3 {
 		    top: 42px;
 		    left: 50%;
 		    right: 0;
-		    bottom: 150px;	   
+		    height: 89px;   
 		    background: white;
 
 		}
@@ -1789,6 +1883,10 @@ h3 {
 			.triangle {
 				left: 450px;
 			}
+		}
+
+		.search-panel {
+			top: 131px;
 		}
 
 	}
