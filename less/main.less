@@ -178,9 +178,6 @@ hr {
     }
 }
 
-// .nav {
-// 	top: 45px;
-// }
 
 .nav-side {
 	display: flex;
@@ -339,6 +336,7 @@ hr {
 }
 
 .custom-dropdown-menu {
+	display: none;
 
 	a {
 		display: inline-block;
@@ -445,7 +443,7 @@ hr {
    .panel-close {
    		display: inline-block;
 	    cursor: pointer;
-	    line-height: 5;
+	    line-height: 2;
 	    color: @light-gray;
 	    transition: color .3s;
 
@@ -1322,6 +1320,116 @@ h3 {
 }
 
 
+.popup-modal {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,.4);
+}
+
+.popup-content {
+	position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%); 
+    width: 90vw;
+    height: 400px;
+    background-image: url(../images/chair-popup.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 30% 100%;
+    background-color: white;
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    .banner-text {
+    	padding: 15px;
+    	background-color: rgba(255,255,255,.6);
+    }
+
+    .cancel {
+    	text-align: right;
+    	font-weight: 600;
+    	color: @light-gray;
+    }
+
+    .text-bg {
+    	font-weight: 800;
+    	font-size: 40px;
+		color: #ececec;
+    }
+
+    .popup-title {
+    	color: black;
+    }
+
+    .subtitle {
+    	margin-left: 0;
+    	letter-spacing: 0;
+    	color: @light-gray;
+
+    	span {
+    		font-weight: 600;
+    		color: #f64a4a;
+    	}
+
+    }
+
+    .wrapper {
+    	position: absolute;
+    	top: 45px;
+    }
+
+    .subscribe-input {
+    	position: absolute;
+	    top: 170px;
+	    width: 80%;
+    }
+
+    .form-control {
+    	margin-bottom: 10px;
+    	border: none;
+    	background-color: #f2f2f2;
+    }
+
+    .btn {
+    	font-size: 14px;
+    	font-weight: 600;
+    	background-color: #ff8283;
+    	border-color: #ff8283;
+    }
+
+	.form-check {
+		position: absolute;
+    	bottom: 0;
+
+	}
+    .form-check-input {
+    	margin-top: .4rem;
+    }
+
+    .form-check-label {
+    	font-size: 13px;
+    	color: @light-gray;
+    }
+}
+
+@keyframes slide {
+	from {
+		top: 10%;
+	}
+
+	to {
+		top: 15%;
+	}
+}
+
+
 
 // tablet 
 
@@ -1556,7 +1664,59 @@ h3 {
 	.social-icons {
 		justify-content: center;
 	}
+
+
+	.popup-content {
+		width: 720px;
+		background-position: 150% 60%;
+
+		.banner-text {
+			padding-bottom: 30px;
+			background-color: transparent;
+		}
+
+		.cancel {
+			cursor: pointer;
+			transition: color .3s;
+
+			&:hover {
+				color: @md-gray-title;
+			}
+		}
+
+		.text-bg {
+			padding-left: 20px;
+			font-size: 80px;
+		}
+
+		.wrapper {
+			left: 50px;
+   			top: 60px;
+		}
+
+		.popup-title {
+			font-size: 30px;
+   			line-height: 2;
+		}
+
+		.subtitle {
+			font-size: 16px;
+		}
+
+		.subscribe-input {
+			left: 50px;
+    		width: 50%;
+		}
+
+		.form-check {
+			left: 50px;
+		}
+	}
+
 }
+
+
+
 
 // desktop
 
@@ -1687,15 +1847,27 @@ h3 {
 		}
 	}
 	
+	.custom-dropdown-toggle {
+		
+		&:hover .custom-dropdown-menu{
+			visibility: visible;
+			opacity: 1;
+			
+		}
+	}
+
 	.custom-dropdown-menu {
 		position: absolute;
 		top: 40px;
 	    right: -500px;
 	    width: 1000px;
-		display: none;
+		display: block;
     	background: white;
     	text-align: left;
     	box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    	opacity: 0;
+    	visibility: hidden;
+    	transition: visibility .5s, opacity .5s linear;
 
 		.container {
 			padding-top: 30px;
@@ -1713,7 +1885,7 @@ h3 {
 
     	.triangle {
     		display: block;
-    		left: 400px;
+    		left: 415px;
     	}
 
     	.ads {

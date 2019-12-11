@@ -2246,6 +2246,9 @@ hr {
   position: relative;
   cursor: pointer;
 }
+.custom-dropdown-menu {
+  display: none;
+}
 .custom-dropdown-menu a {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -2332,7 +2335,7 @@ hr {
 .search-panel .panel-close {
   display: inline-block;
   cursor: pointer;
-  line-height: 5;
+  line-height: 2;
   color: #747474;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -3035,6 +3038,110 @@ h3.banner-title {
   margin-top: 45px;
   margin-bottom: 0;
 }
+.popup-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup-content {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 400px;
+  background-image: url(../images/chair-popup.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 30% 100%;
+  background-color: white;
+  -webkit-animation-name: slide;
+  animation-name: slide;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.popup-content .banner-text {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.popup-content .cancel {
+  text-align: right;
+  font-weight: 600;
+  color: #747474;
+}
+.popup-content .text-bg {
+  font-weight: 800;
+  font-size: 40px;
+  color: #ececec;
+}
+.popup-content .popup-title {
+  color: black;
+}
+.popup-content .subtitle {
+  margin-left: 0;
+  letter-spacing: 0;
+  color: #747474;
+}
+.popup-content .subtitle span {
+  font-weight: 600;
+  color: #f64a4a;
+}
+.popup-content .wrapper {
+  position: absolute;
+  top: 45px;
+}
+.popup-content .subscribe-input {
+  position: absolute;
+  top: 170px;
+  width: 80%;
+}
+.popup-content .form-control {
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.popup-content .btn {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ff8283;
+  border-color: #ff8283;
+}
+.popup-content .form-check {
+  position: absolute;
+  bottom: 0;
+}
+.popup-content .form-check-input {
+  margin-top: 0.4rem;
+}
+.popup-content .form-check-label {
+  font-size: 13px;
+  color: #747474;
+}
+@-webkit-keyframes slide {
+  from {
+    top: 10%;
+  }
+  to {
+    top: 15%;
+  }
+}
+@keyframes slide {
+  from {
+    top: 10%;
+  }
+  to {
+    top: 15%;
+  }
+}
 @media (min-width: 768px) {
   .triangle {
     right: 5px;
@@ -3196,6 +3303,45 @@ h3.banner-title {
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .popup-content {
+    width: 720px;
+    background-position: 150% 60%;
+  }
+  .popup-content .banner-text {
+    padding-bottom: 30px;
+    background-color: transparent;
+  }
+  .popup-content .cancel {
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+  }
+  .popup-content .cancel:hover {
+    color: #535353;
+  }
+  .popup-content .text-bg {
+    padding-left: 20px;
+    font-size: 80px;
+  }
+  .popup-content .wrapper {
+    left: 50px;
+    top: 60px;
+  }
+  .popup-content .popup-title {
+    font-size: 30px;
+    line-height: 2;
+  }
+  .popup-content .subtitle {
+    font-size: 16px;
+  }
+  .popup-content .subscribe-input {
+    left: 50px;
+    width: 50%;
+  }
+  .popup-content .form-check {
+    left: 50px;
+  }
 }
 @media (min-width: 1024px) {
   #header {
@@ -3314,16 +3460,25 @@ h3.banner-title {
   .cart-sum div {
     font-weight: 600;
   }
+  .custom-dropdown-toggle:hover .custom-dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
   .custom-dropdown-menu {
     position: absolute;
     top: 40px;
     right: -500px;
     width: 1000px;
-    display: none;
+    display: block;
     background: white;
     text-align: left;
     -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0.5s, opacity 0.5s linear;
+    -o-transition: visibility 0.5s, opacity 0.5s linear;
+    transition: visibility 0.5s, opacity 0.5s linear;
   }
   .custom-dropdown-menu .container {
     padding-top: 30px;
@@ -3340,7 +3495,7 @@ h3.banner-title {
   }
   .custom-dropdown-menu .triangle {
     display: block;
-    left: 400px;
+    left: 415px;
   }
   .custom-dropdown-menu .ads {
     display: -webkit-box;

@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	// popup
+
+	$('.popup-modal').fadeIn();
+
+	$('.popup-modal .cancel').click(function(e) {
+		$('.popup-modal').fadeOut();
+	});
+
 
 	// mobile toggles
 
@@ -19,7 +27,7 @@ $(document).ready(function(){
 
 		hideDropdown: function() {
 			if($('.custom-dropdown-menu').length>0) {
-				$('.custom-dropdown-menu').hide();
+				$('.custom-dropdown-menu').removeClass('show');
 			}
 		},
 
@@ -88,7 +96,6 @@ $(document).ready(function(){
 	// search panel
 
 	$('.search-toggle a').click(function(e) {
-		e.preventDefault();
 
 		$('.search-panel').fadeToggle().find('.form-control').focus();
 		$('body').toggleClass('scroll-lock');
