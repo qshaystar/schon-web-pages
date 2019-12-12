@@ -7,7 +7,7 @@
 @import "product-detail.less";
 @import "shopping-cart.less";
 @import "order-checkout.less";
-
+@import "error-page.less";
 
 
 * {
@@ -728,6 +728,24 @@ h3 {
     border-radius: 50%;
     text-align: center;    
     background: #62c5de;
+    animation-name: scale;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scale {
+	75% {
+		transform: scale(1);
+	    
+	  }
+	50% {
+	    transform: scale(.9);
+	  }
+	  
+	25% {
+	    transform: scale(1.15);
+	  }
 }
 
 .discount {
@@ -1328,6 +1346,7 @@ h3 {
     right: 0;
     bottom: 0;
     z-index: 10;
+    overflow-y: scroll;
     background-color: rgba(0,0,0,.4);
 }
 
