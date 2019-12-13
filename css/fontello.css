@@ -66,7 +66,7 @@
 .icon-flight:before { content: '\e808'; } /* '' */
 .icon-dropbox:before { content: '\e809'; } /* '' */
 .icon-gplus:before { content: '\e80a'; } /* '' */
-.icon-shopping-bag:before { content: '\e80b'; } /* '' */
+.icon-shopping-bag:before { content: '\e80b';  font-weight: bold;} /* '' */
 .icon-search:before { content: '\e80c'; } /* '' */
 .icon-chat:before { content: '\e80d'; } /* '' */
 .icon-share:before { content: '\e80e'; } /* '' */

@@ -137,6 +137,7 @@ hr {
 }
 
 .account {
+	display: none;
 	text-transform: uppercase; 
 
 	li {
@@ -145,14 +146,15 @@ hr {
 }
 
 .header-bottom {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
 
-.nav, .account {
+.nav, .user-login {
 	display: none;
 	position: absolute;
-	top: 61px;
+	top: 45px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -176,6 +178,14 @@ hr {
     		background-color: #eee;
     	}
     }
+}
+
+.user-login {
+	font-size: 1rem;
+
+	li {
+		padding: .5rem 1rem;
+	}
 }
 
 
@@ -331,12 +341,15 @@ hr {
 
 
 .custom-dropdown-toggle {
-	position: relative;
 	cursor: pointer;
 }
 
 .custom-dropdown-menu {
 	display: none;
+
+	.product-nav-links {
+		display: none;
+	}
 
 	a {
 		display: inline-block;
@@ -729,25 +742,8 @@ h3 {
     border-radius: 50%;
     text-align: center;    
     background: #62c5de;
-    animation-name: scale;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
 }
 
-@keyframes scale {
-	75% {
-		transform: scale(1);
-	    
-	  }
-	50% {
-	    transform: scale(.9);
-	  }
-	  
-	25% {
-	    transform: scale(1.15);
-	  }
-}
 
 .discount {
 	text-decoration: line-through;
@@ -781,17 +777,14 @@ h3 {
 
 @keyframes moveRight {
 
-	0% {
+	from {
 		left: -2px;
 	}
 
-	25% {
+	to {
 		left: 3px;
 	}
 
-	75% {
-		left: 3px;
-	}
 }
 
 .stars {
@@ -1496,17 +1489,7 @@ h3 {
 		}
 	}
 
-	.full-height {
-
-		.wide-header {
-			position: static;
-		}
-
-		.nav {
-			top: 93px;
-		}
-	}
-
+	
 	.search-panel {
 
 		.search-area {
@@ -1840,7 +1823,6 @@ h3 {
 	}
 
 	.header-bottom {
-		
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
@@ -1901,10 +1883,12 @@ h3 {
 
 	.custom-dropdown-menu {
 		position: absolute;
-		top: 40px;
-	    right: -500px;
-	    width: 1000px;
+		top: 81px;
+	    right: 15px;
+	    width: 960px;
 		display: block;
+		padding-top: 30px;
+		padding-bottom: 30px;
     	background: white;
     	text-align: left;
     	box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
@@ -1912,10 +1896,10 @@ h3 {
     	visibility: hidden;
     	transition: visibility .5s, opacity .5s linear;
 
-		.container {
-			padding-top: 30px;
-			padding-bottom: 30px;
-		}
+    	.product-nav-links {
+    		display: block;
+    	}
+
 
     	.row {
     			margin-left: -10px;
@@ -1928,7 +1912,7 @@ h3 {
 
     	.triangle {
     		display: block;
-    		left: 415px;
+    		left: 400px;
     	}
 
     	.ads {
@@ -1949,12 +1933,19 @@ h3 {
 			}
     	}
 
+    	.text-area {
+    		display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+    	}
+
     	.nav-sofa-banner {
     		text-align: center;
     		line-height: 34px;
     		font-weight: 600;
 
     		.text-area {
+    			
     			div {
     				&:first-child {
     					font-size: 32px;
@@ -2016,11 +2007,11 @@ h3 {
 		}
 
 		.custom-dropdown-menu {
-			top: 45px;
-			right: -430px;
+			top: 86px;
+			right: 20px;
 
 			.triangle {
-				left: 486px;
+				left: 456px;
 			}
 		}
 
@@ -2082,7 +2073,9 @@ h3 {
 		}
 
 		.custom-dropdown-menu {
-			right: -470px;
+			top: 76px;
+			padding-top: 50px;
+			padding-bottom: 50px;
 
 			&.nav-img-bg {
 				background-image: url(../images/nav-bg.jpg);
@@ -2090,14 +2083,6 @@ h3 {
 			    background-repeat: no-repeat;
 			}
 
-			.container {
-				padding-top: 50px;
-				padding-bottom: 50px;
-			}
-
-			.triangle {
-				left: 450px;
-			}
 		}
 
 		.search-panel {
@@ -2107,7 +2092,7 @@ h3 {
 	}
 
 	.triangle {
-		right: 100px;
+		right: 104px;
 	}
 
 	.subscribe-bar {
