@@ -61,6 +61,24 @@
     	opacity: 1;
     }
 
+    &:hover .move-up {
+    	position: relative;
+    	animation-name: moveUp;
+		animation-duration: .6s;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
+		top: 8px;
+		opacity: 0;
+    }
+
+    &:hover .move-up:nth-child(2) {
+    	animation-delay: .3s;
+    }
+
+    &:hover .move-up:last-child {
+    	animation-delay: .6s;
+    }
+
 
     .social-icons {
     	justify-content: center;

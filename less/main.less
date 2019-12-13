@@ -429,6 +429,7 @@ hr {
 
    		.btn {
    			padding: 0;
+   			font-size: 18px;
    			color: @light-gray;
 
    			&:focus {
@@ -443,7 +444,7 @@ hr {
    .panel-close {
    		display: inline-block;
 	    cursor: pointer;
-	    line-height: 2;
+	    line-height: 3;
 	    color: @light-gray;
 	    transition: color .3s;
 
@@ -768,7 +769,29 @@ h3 {
     height: 22px;
     width: 22px;
     line-height: 20px;
+}
 
+
+.move-right {
+	position: relative;
+	animation-name: moveRight;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes moveRight {
+
+	0% {
+		left: -2px;
+	}
+
+	25% {
+		left: 3px;
+	}
+
+	75% {
+		left: 3px;
+	}
 }
 
 .stars {
@@ -1101,6 +1124,7 @@ h3 {
     }
 
     button {
+    	position: relative;
 		border: none;
 		color: @light-gray;
 		background-color: transparent;
@@ -1368,7 +1392,7 @@ h3 {
 
     .banner-text {
     	padding: 15px;
-    	background-color: rgba(255,255,255,.6);
+    	background-color: rgba(255,255,255,.5);
     }
 
     .cancel {
@@ -1429,7 +1453,7 @@ h3 {
 
 	}
     .form-check-input {
-    	margin-top: .4rem;
+    	margin-top: .35rem;
     }
 
     .form-check-label {
@@ -1913,7 +1937,7 @@ h3 {
 			
 			.banner {
 				margin-top: 0;
-				transition: opacity .2s;
+				transition: opacity .4s;
 
 				&:hover {
 					opacity: .7;
@@ -2180,6 +2204,40 @@ h3 {
 		}
 
 		&:hover .marked-menu {
+			opacity: 1;
+		}
+
+		&:hover .marked-menu .move-up {
+			animation-name: moveUp;
+			animation-duration: .6s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			top: 8px;
+			opacity: 0;
+		}
+
+		&:hover .marked-menu .wishlist {
+			animation-delay: .3s;
+		}
+
+		&:hover .marked-menu .compare {
+			animation-delay: .6s;
+		}
+
+		&:hover .marked-menu .eyes-on {
+			animation-delay: .6s;
+		}
+	}
+
+	@keyframes moveUp {
+		
+		from {
+			top: 8px;
+			opacity: 0;
+		}
+
+		to {
+			top: 0px;
 			opacity: 1;
 		}
 	}

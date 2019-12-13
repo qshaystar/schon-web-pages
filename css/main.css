@@ -40,6 +40,27 @@
 .cover:hover {
   opacity: 1;
 }
+.cover:hover .move-up {
+  position: relative;
+  -webkit-animation-name: moveUp;
+  animation-name: moveUp;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  top: 8px;
+  opacity: 0;
+}
+.cover:hover .move-up:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.cover:hover .move-up:last-child {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
 .cover .social-icons {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -2451,6 +2472,7 @@ hr {
 }
 .search-panel .btns-group .btn {
   padding: 0;
+  font-size: 18px;
   color: #747474;
 }
 .search-panel .btns-group .btn:focus {
@@ -2461,7 +2483,7 @@ hr {
 .search-panel .panel-close {
   display: inline-block;
   cursor: pointer;
-  line-height: 2;
+  line-height: 3;
   color: #747474;
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -2759,6 +2781,37 @@ h3.banner-title {
   width: 22px;
   line-height: 20px;
 }
+.move-right {
+  position: relative;
+  -webkit-animation-name: moveRight;
+  animation-name: moveRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes moveRight {
+  0% {
+    left: -2px;
+  }
+  25% {
+    left: 3px;
+  }
+  75% {
+    left: 3px;
+  }
+}
+@keyframes moveRight {
+  0% {
+    left: -2px;
+  }
+  25% {
+    left: 3px;
+  }
+  75% {
+    left: 3px;
+  }
+}
 .stars {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3005,6 +3058,7 @@ h3.banner-title {
   color: #535353;
 }
 .marked-menu button {
+  position: relative;
   border: none;
   color: #747474;
   background-color: transparent;
@@ -3234,7 +3288,7 @@ h3.banner-title {
 }
 .popup-content .banner-text {
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .popup-content .cancel {
   text-align: right;
@@ -3283,7 +3337,7 @@ h3.banner-title {
   bottom: 0;
 }
 .popup-content .form-check-input {
-  margin-top: 0.4rem;
+  margin-top: 0.35rem;
 }
 .popup-content .form-check-label {
   font-size: 13px;
@@ -3668,9 +3722,9 @@ h3.banner-title {
   }
   .custom-dropdown-menu .ads .banner {
     margin-top: 0;
-    -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
   }
   .custom-dropdown-menu .ads .banner:hover {
     opacity: 0.7;
@@ -3872,6 +3926,50 @@ h3.banner-title {
   }
   .thumbnail:hover .marked-menu {
     opacity: 1;
+  }
+  .thumbnail:hover .marked-menu .move-up {
+    -webkit-animation-name: moveUp;
+    animation-name: moveUp;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    top: 8px;
+    opacity: 0;
+  }
+  .thumbnail:hover .marked-menu .wishlist {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  .thumbnail:hover .marked-menu .compare {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  .thumbnail:hover .marked-menu .eyes-on {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  @-webkit-keyframes moveUp {
+    from {
+      top: 8px;
+      opacity: 0;
+    }
+    to {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes moveUp {
+    from {
+      top: 8px;
+      opacity: 0;
+    }
+    to {
+      top: 0px;
+      opacity: 1;
+    }
   }
   .header .price {
     font-size: 30px;

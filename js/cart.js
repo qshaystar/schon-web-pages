@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var panel = {
 
 		showMessage: function() {
-			$('.addToCart-msg').stop().show(500).delay(2000).hide(500);
+			$('.addToCart-msg').stop().fadeIn('slow').delay(2000).fadeOut(500);
 		},
 
 		totalAmount: function() {
