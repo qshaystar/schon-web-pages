@@ -2251,6 +2251,8 @@ hr {
   top: 45px;
   left: 0;
   right: 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -2446,7 +2448,7 @@ hr {
   left: 0px;
   right: 0px;
   bottom: 0;
-  z-index: 5;
+  z-index: 15;
   text-align: center;
 }
 .search-panel .container {

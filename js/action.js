@@ -4,8 +4,12 @@ $(document).ready(function(){
 
 	$('.popup-modal').fadeIn();
 
-	$('.popup-modal .cancel').click(function(e) {
+	$('.popup-modal, .popup-modal .cancel').click(function(e) {
 		$('.popup-modal').fadeOut();
+	});
+
+	$('.subscribe-input').click(function(e) {
+		e.stopPropagation();
 	});
 
 
@@ -39,7 +43,7 @@ $(document).ready(function(){
 
 		hideCart: function() {
 			if($('.cart-panel').length>0) {
-				$('.cart-panel').removeClass('show');
+				$('.cart-panel').fadeOut();
 			}
 		}
 
@@ -69,7 +73,12 @@ $(document).ready(function(){
 		init.hideCart();
 		
 		$('.nav').toggleClass('show');
+	});
 
+	$(window).resize(function() {
+		if($('body').width() >= 1024) {
+			$('.nav').removeClass('show')
+		}
 	});
 
 
@@ -82,7 +91,7 @@ $(document).ready(function(){
 		init.hideNav();
 		init.hideAccount();
 
-		$('.cart-panel').toggleClass('show');
+		$('.cart-panel').fadeToggle();
 	});
 
 	$('#cart .btn').click(function(e) {
