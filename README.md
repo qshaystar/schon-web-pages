@@ -1,10 +1,17 @@
-# Schon網站
+# Furniture Store
 
-"網頁15天"的結業實戰練習，將此專案作爲實際接案，約在一個月內完成。每週會與線上助教做討論，讓網站功能更加完整並符合實際線上網站的架構。
+"網頁15天"的結業實戰練習，將此專案作爲實際接案。每週會與線上助教做討論，讓網站功能更加完整並符合實際線上網站的架構。
 
 課程提供桌機版的設計稿，由此設計稿做出一模一樣的網站，並自行建構為響應式網站，
 主要有桌上型電腦(1024px以上)、平板裝置(1024px至768px)、手機裝置(768px以下)，讓網站可以適合各種尺寸的裝置。
 
+### 功能
+
+Home/ Product List/ Product Detail/ Blog List/ Blog Detail/ Contact/ Shopping Cart/ Checkout/ 404 page 頁面
+
+購物車可新增/ 刪除商品
+
+### 主要技術
 
 * 使用LESS撰寫CSS。
 * 使用Bootstrap並依照設計稿對原本樣式做修改。
@@ -14,7 +21,7 @@
 
 ### 頁面介紹
 
-* Home  
+* Home 
 
 	* https://qshaystar.github.io/schon-web-pages/
 
