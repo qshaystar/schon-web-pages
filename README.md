@@ -5,6 +5,9 @@
 課程提供桌機版的設計稿，由此設計稿做出一模一樣的網站，並自行建構為響應式網站，
 主要有桌上型電腦(1024px以上)、平板裝置(1024px至768px)、手機裝置(768px以下)，讓網站可以適合各種尺寸的裝置。
 
+在加入Bootstrap之前，一開始先練習只靠原始CSS來建構，同樣有加入RWD，透過此練習也讓我對網頁佈局有更深入的了解，並能更靈活地去做運用。
+原始版可參考此：https://qshaystar.github.io/offical-site
+
 ### 功能
 
 [Home](https://qshaystar.github.io/schon-web-pages/)/ [Product List](https://qshaystar.github.io/schon-web-pages/product-list.html
