@@ -637,6 +637,18 @@ p.month {
 .entry-author p {
   color: #747474;
 }
+.entry-author .author-avatar {
+  width: 146px;
+  height: 146px;
+}
+.entry-author .author-avatar img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
 .entry-author .social-icons {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -665,6 +677,18 @@ p.month {
 }
 .comments .media-body {
   font-size: 14px;
+}
+.comments .guest-avatar {
+  width: 65px;
+  height: 65px;
+}
+.comments .guest-avatar img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 .comments .comment-date {
   font-style: italic;
@@ -955,6 +979,18 @@ p.month {
   font-size: 16px;
   color: #747474;
 }
+.hot-sales .min-thumbnail {
+  width: 79px;
+  height: 79px;
+}
+.hot-sales .min-thumbnail img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
 .hot-sales .price {
   line-height: 20px;
 }
@@ -1074,6 +1110,10 @@ p.month {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1082,6 +1122,7 @@ p.month {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
   width: 100%;
 }
 .list-arr .desc .stars {
@@ -1121,6 +1162,13 @@ p.month {
   .hot-sales .media {
     width: 300px;
   }
+}
+.list-arr .desc {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: left;
 }
 @media (min-width: 1024px) {
   .product-option-menu {
@@ -1729,7 +1777,6 @@ p.month {
   .order-item .thumbnail {
     margin-right: 8px;
     margin-bottom: 0;
-    width: auto;
   }
   .order-item .delete {
     position: static;
@@ -1756,6 +1803,7 @@ p.month {
   .order-item .thumbnail {
     margin-right: 50px;
     border: 1px solid white;
+    width: 20%;
     -webkit-transition: border-color 0.3s;
     -o-transition: border-color 0.3s;
     transition: border-color 0.3s;
