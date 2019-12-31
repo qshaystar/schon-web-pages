@@ -5,9 +5,13 @@
 課程提供桌機版的設計稿，由此設計稿做出一模一樣的網站，並自行建構為響應式網站，
 主要有桌上型電腦(1024px以上)、平板裝置(1024px至768px)、手機裝置(768px以下)，讓網站可以適合各種尺寸的裝置。
 
+在加入Bootstrap之前，一開始先練習只靠原始CSS來建構，同樣有加入RWD，透過此練習也讓我對網頁佈局有更深入的了解，並能更靈活地去做運用。
+原始版可參考此：https://qshaystar.github.io/offical-site
+
 ### 功能
 
-Home/ Product List/ Product Detail/ Blog List/ Blog Detail/ Contact/ Shopping Cart/ Checkout/ 404 page 頁面
+[Home](https://qshaystar.github.io/schon-web-pages/)/ [Product List](https://qshaystar.github.io/schon-web-pages/product-list.html
+)/ [Product Detail]( https://qshaystar.github.io/schon-web-pages/product-detail.html)/ [About](https://qshaystar.github.io/schon-web-pages/about.html)/ [Blog List]( https://qshaystar.github.io/schon-web-pages/blog-list-sidebar.html)/ [Blog Detail](https://qshaystar.github.io/schon-web-pages/blog-detail.html)/ [Contact](https://qshaystar.github.io/schon-web-pages/contact.html)/ [Shopping Cart]( https://qshaystar.github.io/schon-web-pages/shopping-cart.html)/ [Checkout](https://qshaystar.github.io/schon-web-pages/order-checkout.html)/ [404 page](https://qshaystar.github.io/schon-web-pages/error-page.html) 頁面
 
 購物車可新增/ 刪除商品
 
@@ -23,16 +27,12 @@ Home/ Product List/ Product Detail/ Blog List/ Blog Detail/ Contact/ Shopping Ca
 
 * Home 
 
-	* https://qshaystar.github.io/schon-web-pages/
-
 	* 添加小動畫及各種hover效果，讓頁面更顯活潑。
 
 ![index-demo](/demo/index-demo.gif)
 
 
 * Product List  
-
-	* https://qshaystar.github.io/schon-web-pages/product-list.html
 
 	* 除了以欄內容下排(Column Drop)設計為主，也使用側邊欄選單(Off Canvas)，讓比較常用的"Filter"及"Categories"在明顯的位置。
 
@@ -46,8 +46,6 @@ Home/ Product List/ Product Detail/ Blog List/ Blog Detail/ Contact/ Shopping Ca
 
 * Product Detail 
 
-	* https://qshaystar.github.io/schon-web-pages/product-detail.html
-
 	* 點選"Reviews"會自動跳到該區塊，下方分頁也可自由點選看敘述。
 
 ![product-detail-demo](/demo/product-detail-demo.gif)
@@ -55,39 +53,15 @@ Home/ Product List/ Product Detail/ Blog List/ Blog Detail/ Contact/ Shopping Ca
 
 * About 
 
-	* https://qshaystar.github.io/schon-web-pages/about.html
-
 	* 巢狀式圖片輪播，可隨裝置螢幕尺寸變化而改變顯示圖片數量。
 
 ![about-demo](/demo/about-demo.gif)
 
-* Blog List 
-
-	* https://qshaystar.github.io/schon-web-pages/blog-list-sidebar.html
-
-* Blog Detail 
-
-	* https://qshaystar.github.io/schon-web-pages/blog-detail.html
-
-* Contact 
-
-	* https://qshaystar.github.io/schon-web-pages/contact.html
-
 * Shopping Cart 
 	
-	* https://qshaystar.github.io/schon-web-pages/shopping-cart.html
-
 	* 此頁可更改商品數量及刪除商品，金額將重新計算。
 
 ![shopping-cart-demo](/demo/shopping-cart-demo.gif)
-
-* Checkout 
-
-	* https://qshaystar.github.io/schon-web-pages/order-checkout.html
-
-* 404 page 
-
-	* https://qshaystar.github.io/schon-web-pages/error-page.html
 
 
 **其他功能**
