@@ -11,7 +11,10 @@
 ### 功能
 
 [Home](https://qshaystar.github.io/schon-web-pages/)/ [Product List](https://qshaystar.github.io/schon-web-pages/product-list.html
-)/ [Product Detail]( https://qshaystar.github.io/schon-web-pages/product-detail.html)/ [About](https://qshaystar.github.io/schon-web-pages/about.html)/ [Blog List]( https://qshaystar.github.io/schon-web-pages/blog-list-sidebar.html)/ [Blog Detail](https://qshaystar.github.io/schon-web-pages/blog-detail.html)/ [Contact](https://qshaystar.github.io/schon-web-pages/contact.html)/ [Shopping Cart]( https://qshaystar.github.io/schon-web-pages/shopping-cart.html)/ [Checkout](https://qshaystar.github.io/schon-web-pages/order-checkout.html)/ [404 page](https://qshaystar.github.io/schon-web-pages/error-page.html) 頁面
+)/ [Product Detail]( https://qshaystar.github.io/schon-web-pages/product-detail.html)
+/ [About](https://qshaystar.github.io/schon-web-pages/about.html)/ [Blog List]( https://qshaystar.github.io/schon-web-pages/blog-list-sidebar.html)/ [Blog Detail](https://qshaystar.github.io/schon-web-pages/blog-detail.html)
+/ [Contact](https://qshaystar.github.io/schon-web-pages/contact.html)/ [Shopping Cart]( https://qshaystar.github.io/schon-web-pages/shopping-cart.html)/ [Checkout](https://qshaystar.github.io/schon-web-pages/order-checkout.html)
+/ [404 page](https://qshaystar.github.io/schon-web-pages/error-page.html) 頁面
 
 購物車可新增/ 刪除商品
 
